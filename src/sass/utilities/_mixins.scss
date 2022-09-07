@@ -1,0 +1,26 @@
+@mixin fonts($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: ($lh / $fs);
+    letter-spacing: $ls;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin media($w) {
+    @media screen and (min-width: $w) {
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (min-devace-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+}

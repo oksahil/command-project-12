@@ -1,2 +1,25 @@
 @import './common';
-@import './example';
+@import './utilities/vars';
+@import './utilities/hidden';
+@import './utilities/mixins';
+
+@import './base/reset';
+@import './base/general';
+
+@import './components/container';
+@import './components/btn';
+@import './components/header-tel';
+@import './components/order';
+@import './components/mob-menu';
+
+@import './units/header';
+@import './units/hero';
+@import './units/galery';
+@import './units/photo';
+@import './units/modeling';
+@import './units/scan';
+@import './units/portfolio';
+@import './units/contakty';
+@import './units/footer';
+
+@import './components/modal';
