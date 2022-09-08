@@ -1,5 +1,6 @@
 .hero {
     // font-family: sans-serif;
+    // @include fonts(400, 16px, 19px, null);
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
