@@ -1,7 +1,7 @@
 <div class="container">
-  <h2>ГАЛЕРЕЯ</h2>
-  <ul>
-    <li>
+  <h2 class="title">ГАЛЕРЕЯ</h2>
+  <ul class="gallery list">
+    <li class="gallery__list">
       <picture>
         <source
           srcset="
@@ -10,12 +10,16 @@
           "
           media="(max-width: 767px)"
         />
-        <img src="/src/images/gallery-mob1.jpg" alt="Engineering" />
+        <img
+          src="/src/images/gallery1-1x.jpg"
+          width="450"
+          alt="Інженерний аналіз"
+        />
       </picture>
 
-      <p>Інженерні методи аналізу та контролю якості</p>
+      <p class="gallery__text">Інженерні методи аналізу та контролю якості</p>
     </li>
-    <li>
+    <li class="gallery__list">
       <picture>
         <source
           srcset="
@@ -24,12 +28,16 @@
           "
           media="(max-width: 767px)"
         />
-        <img src="/src/images/gallery-mob2.jpg" alt="3D Scanning" />
+        <img
+          src="/src/images/gallery2-1x.jpg"
+          width="450"
+          alt="3Д сканування"
+        />
       </picture>
 
-      <p>Високоточне 3D сканування</p>
+      <p class="gallery__text">Високоточне 3D сканування</p>
     </li>
-    <li>
+    <li class="gallery__list">
       <picture>
         <source
           srcset="
@@ -38,12 +46,12 @@
           "
           media="(max-width: 767px)"
         />
-        <img src="/src/images/gallery-mob3.jpg" alt="3D Copy" />
+        <img src="/src/images/gallery3-1x.jpg" width="450" alt="3Д копія" />
       </picture>
 
-      <p>Створення точної копії на базі сканування reverse engineering</p>
+      <p class="gallery__text">Створення точної копії на базі сканування reverse engineering</p>
     </li>
-    <li>
+    <li class="gallery__list">
       <picture>
         <source
           srcset="
@@ -52,10 +60,10 @@
           "
           media="(max-width: 767px)"
         />
-        <img src="/src/images/gallery-mob4.jpg" alt="3D Design" />
+        <img src="/src/images/gallery4-1x.jpg" width="450" alt="3Д Дизайн" />
       </picture>
 
-      <p>
+      <p class="gallery__text">
         Всі цикли 3D проектування, створення фотореалістичних цифрових моделей
       </p>
     </li>
