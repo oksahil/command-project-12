@@ -83,13 +83,69 @@ body {
   }
 }
 
-.footer__item {
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 400;
+
+.footer-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width:320px;
+  height: 100%;
+  background-color: #F5F5FA;
+}
+
+.footer-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__email, .footer__tel-top, .footer__tel-bottom {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      color: #487996;
+}
+
+.tel-top{
+  margin-bottom: 8px;
+}
+
+.footer__item, .footer__soc-item, .footer__contacts-item {
   font-size: 16px;
-  line-height: 20px;
-  text-align: center;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   color: #2B2B2B;
+}
+
+.footer__item:not(:last-child){
+  margin-bottom: 8px;
+}
+
+.footer__list{
+  text-align: center;
+  margin-top: 19px;
+}
+
+.footer__soc {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;}
+
+.footer__soc-item:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.footer__contacts {
+  text-align: center;}
+
+.footer__contacts-item {
+     display: block;
+}
+
+
+.footer-title {
+  margin-bottom: 8px;
+}
+
+.footer-box {
+  margin-top: 24px;
 }/*# sourceMappingURL=index.css.map */
