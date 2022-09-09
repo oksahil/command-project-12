@@ -31,7 +31,34 @@
 
 body {
     font-family: 'CeraPro', sans-serif;
-   
+
+   @media screen and (max-width: 767px) {
+
+background-color: var(--bg-color-main);
+  background-image: 
+    url(/src/images/bg-mob.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+       }
+     @media screen and (min-width: 768px) {
+
+background-color: var(--bg-color-main);
+  background-image: 
+    url(/src/images/bg-tab.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+       }  
+       @media screen and (min-width: 1200px) {
+
+background-color: var(--bg-color-main);
+  background-image: 
+    url(/src/images/bg-tab.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+       }  
 }
 
 .list {
