@@ -1,0 +1,38 @@
+.section {
+  padding-bottom: 156px;
+}
+
+.container {
+  @media screen and (min-width: 1440px) {
+    padding: 0 149px;
+  }
+}
+
+.photo__titel {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #487996;
+  margin-bottom: 16px;
+}
+
+.photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+}
+
+.photo__link img {
+  width: 100vw;
+  @media screen and (min-width: 480px) {
+    width: 440px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
