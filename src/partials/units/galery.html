@@ -1,9 +1,23 @@
-<section class="section">
+<section class="section gallery">
     <div class="container">
   <h2 class="title-page">ГАЛЕРЕЯ</h2>
-  <ul class="gallery list">
+  <ul class="list">
     <li class="gallery__list">
       <picture>
+        <source
+          srcset="
+            /src/images/gallery1-1x.jpg    1x,
+            /src/images/gallery1-2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-tab1.jpg    1x,
+            /src/images/gallery-tab1-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
         <source
           srcset="
             /src/images/gallery-mob1.jpg    1x,
@@ -11,7 +25,7 @@
           "
           media="(max-width: 767px)"
         />
-        <img
+        <img class="gallery__image"
           src="/src/images/gallery1-1x.jpg"
           width="450"
           alt="Інженерний аналіз"
@@ -24,12 +38,26 @@
       <picture>
         <source
           srcset="
+            /src/images/gallery2-1x.jpg    1x,
+            /src/images/gallery2-2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-tab2.jpg    1x,
+            /src/images/gallery-tab2-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
             /src/images/gallery-mob2.jpg    1x,
             /src/images/gallery-mob2-2x.jpg 2x
           "
           media="(max-width: 767px)"
         />
-        <img
+        <img class="gallery__image"
           src="/src/images/gallery2-1x.jpg"
           width="450"
           alt="3Д сканування"
@@ -42,12 +70,26 @@
       <picture>
         <source
           srcset="
+            /src/images/gallery3-1x.jpg    1x,
+            /src/images/gallery3-2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-tab3.jpg    1x,
+            /src/images/gallery-tab3-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
             /src/images/gallery-mob3.jpg    1x,
             /src/images/gallery-mob3-2x.jpg 2x
           "
           media="(max-width: 767px)"
         />
-        <img src="/src/images/gallery3-1x.jpg" width="450" alt="3Д копія" />
+        <img class="gallery__image" src="/src/images/gallery3-1x.jpg" width="450" alt="3Д копія" />
       </picture>
 
       <h4 class="gallery__text">Створення точної копії на базі сканування reverse engineering</h4>
@@ -56,12 +98,27 @@
       <picture>
         <source
           srcset="
+            /src/images/gallery4-1x.jpg    1x,
+            /src/images/gallery4-2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/gallery-tab4.jpg    1x,
+            /src/images/gallery-tab4-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
             /src/images/gallery-mob4.jpg    1x,
             /src/images/gallery-mob4-2x.jpg 2x
           "
           media="(max-width: 767px)"
         />
-        <img src="/src/images/gallery4-1x.jpg" width="450" alt="3Д Дизайн" />
+        <img class="gallery__image" 
+        src="/src/images/gallery4-1x.jpg" width="450" alt="3Д Дизайн" />
       </picture>
 
       <h4 class="gallery__text">
