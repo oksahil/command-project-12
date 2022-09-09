@@ -10,6 +10,7 @@ margin-bottom: 40px;
 }
 
 .gallery__list {
+    list-style: none;
         @include media(768px) {
     display: flex;
     flex-wrap: wrap;
