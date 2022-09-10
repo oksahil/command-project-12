@@ -1,20 +1,19 @@
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    @include media(480px) {
-        max-width: 480px;
-    }
+  @include media(480px) {
+    max-width: 480px;
+  }
 
-    @include media(768px) {
-        max-width: 768px;
-    }
+  @include media(768px) {
+    max-width: 768px;
+  }
 
-    @include media(1440px) {
-        max-width: 1440px;
-    }
+  @include media(1440px) {
+    max-width: 1440px;
+  }
 }
