@@ -1,73 +1,63 @@
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Light.woff);
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Light.woff);
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Medium.woff);
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Medium.woff);
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Bold.woff);
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'caviardreams';
-    src: url(./../fonts/caviardreams.woff);
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'caviardreams';
+  src: url(./../fonts/caviardreams.woff);
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {
-    font-family: 'CeraPro', sans-serif;
+  font-family: 'CeraPro', sans-serif;
+  background-color: var(--bg-color-main);
 
-   @media screen and (max-width: 767px) {
-
-background-color: var(--bg-color-main);
-  background-image: 
-    url(/src/images/bg-mob.jpg);
+  @media screen and (max-width: 767px) {
+    background-image: url(/src/images/bg-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-       }
-     @media screen and (min-width: 768px) {
+  }
 
-background-color: var(--bg-color-main);
-  background-image: 
-    url(/src/images/bg-tab.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-       }  
-       @media screen and (min-width: 1200px) {
-
-background-color: var(--bg-color-main);
-  background-image: 
-    url(/src/images/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-       }  
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/bg-tab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(/src/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
-
