@@ -30,13 +30,27 @@
     // margin-top: 22px;
     // margin-left: 20px;
     text-align: left;
+    margin-top: 16px;
 }
 
-.order-connection--margin {
+.forms {
     margin-top: 39px;
-    margin-left: 20px;
+    // margin-left: 20px;
+    width: 100%;
 }
-
+.order-form-choice {
+    // width: 280px;
+    width: 100%;
+    height: 24px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #487996;
+    // font-family: 'Cera Pro';
+    // font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2B2B2B;
+}
 // .order-connection-title {
 //     font-family: 'Cera Pro';
 //     font-style: normal;
@@ -50,11 +64,11 @@
     display: block;
 }
 
-.order-form__container-name {
+.order-form__name {
     margin-top: 28px;
 }
 
-.order-form__container-email {
+.order-form__field {
     margin-top: 44px;
 }
 
@@ -77,7 +91,8 @@
     }
 }
 
-.order-form-choice {
+.order-form__comment {
+    width: 100%;
     height: 199px;
     margin-top: 4px;
     resize: none;
@@ -113,4 +128,5 @@
     margin-right: 20px;
     margin-top: 35px;
     width: 280px;
+    margin-bottom: 60px;
 }
