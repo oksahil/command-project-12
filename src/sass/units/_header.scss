@@ -50,6 +50,45 @@ img {
     display: flex;
     justify-content: center;
 }
+.head-menu__content {
+    position: absolute;
+    display: none;
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+    }
+}
+.head-menu__title {
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 00.01em;
+    color: #2b2b2b;
+}
+.head-menu__offer {
+    display: flex;
+}
+.head-menu__word {
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 00.01em;
+    color: #2b2b2b;
+}
+.head-item__text {
+
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 00.01em;
+    color: #2b2b2b;
+}
 
 
 .icon-menu {
