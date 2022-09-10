@@ -1,0 +1,28 @@
+.process-pre-title{
+    @include fonts(700, 16px, 20px, null);
+        text-transform: uppercase;
+    
+        color: #487996;
+}
+
+.examples-pre-title{
+    @include fonts(null, 14px, 18px, null);
+    
+        color: #487996;
+    
+        // @media screen and (max-width:767px) {
+        //     margin-bottom: 16px;
+}
+
+.examples-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        row-gap: 20px;
+        column-gap: 16px;
+}
+
+.examples-item{
+    width: calc((100%-20px)/2);
+    
+}
