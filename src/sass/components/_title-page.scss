@@ -1,0 +1,9 @@
+.title-page {
+    @include fonts(700, 24px, 30px, null);
+
+    color: #487996;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 16px;
+    }
+}

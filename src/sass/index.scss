@@ -6,20 +6,27 @@
 @import './base/reset';
 @import './base/general';
 
+@import './components/title-page';
+@import './components/title-section';
+
 @import './components/container';
 @import './components/btn';
 @import './components/header-tel';
 @import './components/order';
 @import './components/mob-menu';
+@import './components/contacts-details';
+
 
 @import './units/header';
 @import './units/hero';
 @import './units/galery';
 @import './units/photo';
 @import './units/modeling';
+@import './units/printing';
 @import './units/scan';
 @import './units/portfolio';
-@import './units/contakty';
+@import './units/contacts';
+
 @import './units/footer';
 
 @import './components/modal';
