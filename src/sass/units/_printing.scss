@@ -24,5 +24,32 @@
 
 .examples-item{
     width: calc((100%-20px)/2);
-    
+    height: auto;
+    background-color: #fff;
+    border-radius: 50px 0px;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.examples-item-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.process-item-img{
+    display: block;
+    border-radius: 50px 0px;
+    box-shadow: 20px 20px 80px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+.process-description{
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+
+.printing-btn{
+    margin-left: auto;
+    margin-right: auto;
 }
