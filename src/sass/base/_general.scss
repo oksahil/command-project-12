@@ -33,25 +33,38 @@ body {
   font-family: 'CeraPro', sans-serif;
   background-color: var(--bg-color-main);
 
-  @media screen and (max-width: 767px) {
+  
     background-image: url(/src/images/bg-mob.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: contain;
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: 
+    url(/src/images/bg-mob-2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
     background-image: url(/src/images/bg-tab.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: 
+    url(/src/images/bg-tab-2x.jpg);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     background-image: url(/src/images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    max-width: 1562px;
+     @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: 
+    url(/src/images/bg-2x.jpg);
+}
   }
+}
 }
 
 .list {
