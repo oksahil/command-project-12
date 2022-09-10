@@ -1,28 +1,50 @@
 .modeling {
   max-width: 100%;
+  background: var(--bg-color-main);
   // width: 280px;
 }
 .modeling__pictures {
+  // width: 280px;
+  // margin-right: auto;
+  // margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  // columns: 2;
   margin-top: 16px;
   margin-bottom: 40px;
   row-gap: 16px;
   column-gap: 20px;
+  width: 100%;
 }
 .modeling__h1 {
+  @include fonts(700, 24px, 30px, null);
   margin-bottom: 16px;
+  color: var(--title-color);
 }
 .modeling__p {
+  @include fonts(300, 16px, 20px, null);
+  color: var(--text-color);
   margin-bottom: 16px;
 }
 .modeling__p-second {
+  @include fonts(300, 16px, 20px, null);
+  color: var(--text-color);
   margin-bottom: 40px;
 }
 .modeling__h2 {
+  @include fonts(700, 18px, 23px, null);
   margin-bottom: 16px;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+.modeling__h3 {
+  @include fonts(700, 16px, 20px, null);
+  color: var(--title-color);
 }
 .modeling__li {
+  @include fonts(300, 16px, 20px, null);
+  color: var(--text-color);
   margin-left: 15px;
   position: relative;
   &:not(:last-child) {
@@ -33,16 +55,27 @@
   list-style: none;
 }
 .modeling__img-photo {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-image: url('../images/modeling-mob-1x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color-main);
+  max-width: 100%;
+  min-width: 100%;
+  padding-top: 58%;
 }
 .modeling__marker {
   position: absolute;
   left: -15px;
   top: 50%;
   transform: translate(0, -50%);
-  background-color: #487996;
+  background-color: var(--title-color);
   width: 7px;
   height: 7px;
   border-radius: 3px 0px;
+}
+
+.modeling__png {
+  flex-shrink: 1;
 }
