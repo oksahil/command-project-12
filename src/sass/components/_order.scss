@@ -54,6 +54,15 @@
         text-transform: capitalize;
         color: var(--text-color);
     }
+                &:not(:focus):not(:placeholder-shown):valid {
+                    background-color: rgba(106, 196, 173, 0.247);
+                    border: 1px solid green;
+                }
+        
+                &:not(:focus):not(:placeholder-shown):invalid {
+                    background-color: rgba(196, 106, 136, 0.247);
+                    border: 1px solid red;
+                }
 }
 
 .order-form__comment {
