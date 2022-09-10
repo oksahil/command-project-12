@@ -1,3 +1,7 @@
+.printing-title{
+    text-transform: uppercase;
+}
+
 .process-pre-title{
     @include fonts(700, 16px, 20px, null);
         text-transform: uppercase;
@@ -7,7 +11,7 @@
 
 .examples-pre-title{
     @include fonts(null, 14px, 18px, null);
-    
+    text-transform: uppercase;
         color: #487996;
     
         // @media screen and (max-width:767px) {
@@ -23,13 +27,14 @@
 }
 
 .examples-item{
-    width: calc((100%-20px)/2);
-    height: auto;
+    width: calc((100% - 20px)/2);
+    height: 158px;
     background-color: #fff;
     border-radius: 50px 0px;
     opacity: 0.8;
     box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
