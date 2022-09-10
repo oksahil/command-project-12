@@ -41,18 +41,6 @@
   }
 }
 
-.hero-scan__wrapper {
-  @media screen and (min-width: 768px) {
-    max-width: 515px;
-    position: relative;
-  }
-
-  @media screen and (min-width: 1440px) {
-    display: inline-flex;
-    width: 100%;
-  }
-}
-
 .hero-scan__title {
   font-style: 400;
   font-weight: 700;
@@ -73,15 +61,40 @@
   }
 }
 
+.hero-scan__wrapper {
+  @media screen and (min-width: 768px) {
+    max-width: 515px;
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: inline-flex;
+    width: 100%;
+  }
+}
+
+.hero-scan__item + .hero-scan__item {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-top: 16px;
+  }
+}
+
 .hero-scan__text {
+  position: relative;
+  z-index: 2;
+
   font-style: 400;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
 
   color: #2b2b2b;
-  margin-top: 16px;
+
   //   background-color: tomato;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 
   @media screen and (min-width: 1440px) {
     width: 515px;
@@ -92,6 +105,7 @@
 }
 
 .hero-scan__text + .hero-scan__text {
+  margin-top: 16px;
   @media screen and (min-width: 1440px) {
     margin-top: 24px;
     margin-right: 72px;
@@ -100,7 +114,6 @@
 
 .text-tab {
   display: none;
-
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: block;
   }
@@ -113,6 +126,10 @@
   }
 }
 
+.image-position {
+  position: relative;
+}
+
 .hero-scan__image {
   margin-left: auto;
   margin-right: auto;
@@ -120,17 +137,31 @@
   height: 199px;
   background-image: url(.././images/scanning-hero-mob.png);
   background-repeat: no-repeat;
-
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/scanning-hero-mob-2x.png);
+    background-size: 280px;
+  }
   margin-top: 20px;
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 85px;
-    right: -217px;
+    bottom: 39px;
+    right: -215px;
     background-image: url(.././images/scanning-hero-tab.png);
     width: 241px;
     height: 172px;
     margin-top: 0;
+    z-index: 0;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-hero-tab-2x.png);
+      background-size: 241px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -141,6 +172,13 @@
     width: 435px;
     height: 286px;
     margin: 0;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-hero-desk-2x.png);
+      background-size: 435px;
+    }
   }
 }
 
@@ -280,12 +318,26 @@
   height: 81px;
   background-image: url(.././images/scanning-process1-mob.png);
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/scanning-process1-mob-2x.png);
+    background-size: 91px;
+  }
 
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process1-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process1-tab-2x.png);
+      background-size: 108px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -293,6 +345,13 @@
     width: 240px;
     height: 209px;
     top: 67px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process1-desk-2x.png);
+      background-size: 240px;
+    }
   }
 }
 
@@ -306,12 +365,26 @@
   height: 81px;
   background-image: url(.././images/scanning-process2-mob.png);
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/scanning-process2-mob-2x.png);
+    background-size: 91px;
+  }
 
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process2-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process2-tab-2x.png);
+      background-size: 108px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -319,6 +392,13 @@
     width: 240px;
     height: 209px;
     top: 67px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process2-desk-2x.png);
+      background-size: 240px;
+    }
   }
 }
 
@@ -332,12 +412,26 @@
   height: 81px;
   background-image: url(.././images/scanning-process3-mob.png);
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/scanning-process3-mob-2x.png);
+    background-size: 91px;
+  }
 
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process3-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process3-tab-2x.png);
+      background-size: 108px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -345,6 +439,13 @@
     width: 240px;
     height: 209px;
     top: 67px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process3-desk-2x.png);
+      background-size: 240px;
+    }
   }
 }
 
@@ -358,12 +459,26 @@
   height: 81px;
   background-image: url(.././images/scanning-process4-mob.png);
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/scanning-process4-tab-2x.png);
+    background-size: 91px;
+  }
 
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process4-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process4-tab-2x.png);
+      background-size: 108px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -371,6 +486,13 @@
     width: 240px;
     height: 209px;
     top: 67px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(.././images/scanning-process4-desk-2x.png);
+      background-size: 240px;
+    }
   }
 }
 
@@ -409,7 +531,6 @@
 }
 
 .scan-btn__text {
-  //   font-family: 'Cera Pro';
   font-style: 400;
   font-weight: 700;
   font-size: 16px;
