@@ -1,64 +1,32 @@
-
-// .order-title {
-//     font-family: 'Cera Pro';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 24px;
-//     line-height: 1.25;
-//     color: #487996;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-top: 92px;
-//     text-align: center;
-// }
-
-
 .order-img {
     padding: 0 20px;
     margin-top: 16px;
 }
 
 .order-text {
-    // font-family: 'Cera Pro';
-    // font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: calc(20px / 16px);
-    color: #2B2B2B;
+    color: var(--text-color);
     width: 100%;
-    // width: 260px;
-    // margin-top: 22px;
-    // margin-left: 20px;
     text-align: left;
     margin-top: 16px;
 }
 
 .forms {
-    margin-top: 39px;
-    // margin-left: 20px;
+    margin-top: 41px;
     width: 100%;
 }
 .order-form-choice {
-    // width: 280px;
     width: 100%;
     height: 24px;
     border: 1px solid transparent;
     border-bottom: 1px solid #487996;
-    // font-family: 'Cera Pro';
-    // font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    color: #2B2B2B;
+    color: var(--text-color);
 }
-// .order-connection-title {
-//     font-family: 'Cera Pro';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: 1.27;
-//     color: #487996;
-// }
 
 .order-form {
     display: block;
@@ -74,20 +42,17 @@
 
 .order-form-name,
 .order-form-email {
-    // width: 280px;
     width: 100%;
     height: 24px;
     border: 1px solid transparent;
     border-bottom: 1px solid #487996;
 
     &::placeholder {
-        // font-family: 'Cera Pro';
-        // font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
         text-transform: capitalize;
-        color: #2B2B2B;
+        color: var(--text-color);
     }
 }
 
@@ -100,8 +65,6 @@
     border-radius: 50px 0px;
 
     &__comment::placeholder {
-        // font-family: 'Cera Pro';
-        // font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -113,13 +76,12 @@
 
 .order-form-note {
     margin-top: 4px;
-    // font-family: 'Cera Pro';
-    // font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     color: #CDCDCD;
-    width: 280px;
+    // width: 280px;
+    width: 100%;
     height: 80px;
     text-align: left;
 }
@@ -129,4 +91,8 @@
     margin-top: 35px;
     width: 280px;
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
 }
