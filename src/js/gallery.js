@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script type ="text/javascript">
 const galleryItem = document.getElementsByClassName("gallery-item");
 const lightBoxContainer = document.createElement("div");
 const lightBoxContent = document.createElement("div");

@@ -133,7 +133,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
-  color: #487996;
+  color: var(--title-color);
 }
 @media screen and (max-width: 767px) {
   .title-page {
@@ -146,7 +146,7 @@ body {
   font-size: 18px;
   line-height: 1.2777777778;
   text-transform: uppercase;
-  color: #487996;
+  color: var(--title-color);
 }
 
 .container {
@@ -450,7 +450,7 @@ body {
   left: -15px;
   top: 50%;
   transform: translate(0, -50%);
-  background-color: #487996;
+  background-color: var(--title-color);
   width: 7px;
   height: 7px;
   border-radius: 3px 0px;
