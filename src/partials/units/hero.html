@@ -1,7 +1,40 @@
-<section class="hero section">
+<section class="hero">
     <div class="container">
 
         <h1 class="hero__title">Інженерна, конструкторська та дизайнерська робота</h1>
+
+        <div class="hero-fonpict">
+
+            <a href="" class="hero-fonpict__anchor">
+                <svg width="17" height="17" class="hero-fonpict__icon">
+                    <use href="./images/icons.svg#icon-arrow-down"></use>
+                </svg>
+            </a>
+
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/heroback1-tab.jpg 1x,
+                            ./images/heroback1-tab-2x.jpg 2x">
+                <img src="./images/heroback1-tab.jpg" alt="рослинки" width="74" class="hero-fonpict__pict pict--one">
+            </picture>
+
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/heroback2-tab.jpg 1x,
+                            ./images/heroback2-tab-2x.jpg 2x">
+                <img src="./images/heroback2-tab.jpg" alt="станок" width="74" class="hero-fonpict__pict pict--two">
+            </picture>
+
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/heroback3-tab.jpg 1x,
+                            ./images/heroback3-tab-2x.jpg 2x">
+                <img src="./images/heroback3-tab.jpg" alt="штукенція" width="74" class="hero-fonpict__pict pict--three">
+            </picture>
+
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/heroback4-tab.jpg 1x,
+                            ./images/heroback4-tab-2x.jpg 2x">
+                <img src="./images/heroback4-tab.jpg" alt="гриб-лампа" width="74" class="hero-fonpict__pict pict--four">
+            </picture>
+        </div>
 
         <ul class="hero-imglist">
 
@@ -9,29 +42,32 @@
                 <picture>
                     <!-- <source media="(min-width: 1200px)"
                         srcset="./images/igor.jpg 1x,
-                                ./images/igor-2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                        srcset="./images/igor-tab.jpg 1x,
-                                ./images/igor-tab-2x.jpg 2x"> -->
+                                ./images/igor-2x.jpg 2x"> -->
+                    <source media="(min-width: 768px)" srcset="./images/hero1-tab.jpg 1x,
+                                ./images/hero1-tab-2x.jpg 2x">
                     <source media="(max-width: 767px)" srcset="./images/hero1-mob.jpg 1x,
                                 ./images/hero1-mob-2x.jpg 2x">
-                    <img src="./images/hero1-mob.jpg" alt="робот" class="hero-imglist__pict-one">
+                    <img src="./images/hero1-mob.jpg" alt="робот" width="83" class="hero-imglist__pict-one">
                 </picture>
             </li>
 
             <li class="hero-imglist__item">
                 <picture>
+                    <source media="(min-width: 768px)" srcset="./images/hero2-tab.jpg 1x,
+                                ./images/hero2-tab-2x.jpg 2x">
                     <source media="(max-width: 767px)" srcset="./images/hero2-mob.jpg 1x,
                                 ./images/hero2-mob-2x.jpg 2x">
-                    <img src="./images/hero2-mob.jpg" alt="лампи" class="hero-imglist__pict-two">
+                    <img src="./images/hero2-mob.jpg" alt="лампи" width="83" class="hero-imglist__pict-two">
                 </picture>
             </li>
 
             <li class="hero-imglist__item">
                 <picture>
+                    <source media="(min-width: 768px)" srcset="./images/hero3-tab.jpg 1x,
+                                ./images/hero3-tab-2x.jpg 2x">
                     <source media="(max-width: 767px)" srcset="./images/hero3-mob.jpg 1x,
                                 ./images/hero3-mob-2x.jpg 2x">
-                    <img src="./images/hero3-mob.jpg" alt="череп" class="hero-imglist__pict-three">
+                    <img src="./images/hero3-mob.jpg" alt="череп" width="83" class="hero-imglist__pict-three">
                 </picture>
             </li>
         </ul>
