@@ -35,7 +35,7 @@ img {
     color: var(--title-color);
     transition: color 250ms var(--cubic-bezier);
 
-    @media screen and (min-width: 1440px) {
+    @include media(1440px) {
         position: absolute;
         display: none;
     }
@@ -67,7 +67,7 @@ img {
     display: flex;
     justify-content: center;
 
-    @media screen and (min-width: 1440px) {
+    @include media(1440px) {
         display: none;
     }
 }
@@ -95,7 +95,7 @@ img {
 .head-menu {
     display: none;
 
-    @media screen and (min-width: 1440px) {
+    @include media(1440px) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -106,7 +106,7 @@ img {
     position: absolute;
     display: none;
 
-    @media screen and (min-width: 1440px) {
+    @include media(1440px) {
         display: flex;
         align-items: center;
         gap: 56px;
@@ -205,13 +205,13 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
     &:last-child {
         display: none;
 
-        @media screen and (min-width: 768px) {
+        @include media(768px) {
             display: block;
             margin-left: 27px;
         }
     }
 
-    @media screen and (min-width: 768px) {
+        @include media(768px) {
         &:first-child {
             margin-right: 27px;
         }
@@ -330,7 +330,7 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
     color: var(--title-color);
     transition: fill 250ms var(--cubic-bezier);
 
-    @media screen and (min-width: 768px) {
+    @include media(768px) {
         display: none;
     }
     &:hover, &:focus {
@@ -349,7 +349,7 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
     align-items: center;
     list-style: none;
 
-    @media screen and (min-width: 768px) {
+    @include media(768px) {
         display: flex;
     }
 }
@@ -360,7 +360,7 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
     margin-right: -250%;
     right: 0;
 
-    @media screen and (min-width: 768px) {
+    @include media(768px) {
         display: none;
     }
 }
@@ -395,7 +395,7 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
         margin-right: 27px;
     }
 
-    @media screen and (min-width: 768px) {
+        @include media(768px) {
         &:first-child {
             margin-right: 27px;
         }
