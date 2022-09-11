@@ -1,8 +1,15 @@
 @mixin fonts($fw, $fs, $lh, $ls) {
+<<<<<<< HEAD
   font-weight: $fw;
   font-size: $fs;
-  //   line-height: ($lh / $fs);
+    line-height: calc($lh / $fs);
   letter-spacing: $ls;
+=======
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh / $fs);
+    letter-spacing: $ls;
+>>>>>>> main
 }
 
 @mixin center {
