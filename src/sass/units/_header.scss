@@ -7,6 +7,7 @@
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
+    background-color: #ffffff;
 
 }
 
@@ -31,12 +32,19 @@ img {
     display: block;
     background-color: transparent;
     border: none;
-    fill: #487996;
-    @media screen and (min-width: 1440px) {
-            position: absolute;
-            display: none;
-        }
+    color: var(--title-color);
+    transition: fill 250ms var(--cubic-bezier);
 
+    @media screen and (min-width: 1440px) {
+        position: absolute;
+        display: none;
+    }
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
+}
+.icon-open, .icon-close {
+    fill: currentColor;
 }
 
 .menu-button .icon-close {
@@ -58,8 +66,27 @@ img {
 .menu-open__wrap {
     display: flex;
     justify-content: center;
-        @media screen and (min-width: 1440px) {
+
+    @media screen and (min-width: 1440px) {
         display: none;
+    }
+}
+
+.head-menu__link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid #008CEF;
+    border-left: 5px solid #0000;
+    border-right: 5px solid #0000;
+    border-radius: 2px;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
     }
 }
 
@@ -67,6 +94,7 @@ img {
 
 .head-menu {
     display: none;
+
     @media screen and (min-width: 1440px) {
         display: flex;
         align-items: center;
@@ -92,15 +120,38 @@ img {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 00.01em;
-    color: #2b2b2b;
+    color: var(--text-color);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .head-menu__offer {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
+
 .head-menu__list {
     display: none;
+    position: absolute;
+    top: 90%;
+    left: -65%;
+    width: 140px;
+    background-color: transparent;
+    text-align: center;
+
+
+}
+
+.head-menu__content>.head-menu__offer:hover .head-menu__list {
+    display: block;
+}
+
+body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
+    display: block;
 }
 
 .head-menu__word {
@@ -110,7 +161,12 @@ img {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 00.01em;
-    color: #2b2b2b;
+    color: var(--text-color);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .head-item__text {
@@ -121,6 +177,11 @@ img {
     line-height: 19px;
     letter-spacing: 00.01em;
     color: #2b2b2b;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 
@@ -137,7 +198,12 @@ img {
     line-height: 18px;
 
     letter-spacing: 0.01em;
-    color: #BDBDBD;
+    color: var(--bg-color-main);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .contacts-item {
@@ -168,31 +234,25 @@ img {
 
 .contacts__phone-svg {
     align-items: center;
-    fill: #487996;
+    fill: currentColor;
     margin-right: 5px;
 
 }
 
 .nav-menu {
+    position: absolute;
+    z-index: 2;
     display: none;
     width: 100vw;
     height: 100vh;
 
     background-color: #ffffff;
+
     &.is-open {
         display: block;
     }
 
 }
-
-.menu-close {
-    position: absolute;
-    display: none;
-    background-color: transparent;
-    border: none;
-    fill: #487996;
-}
-
 .nav-menu .icon-close {
     display: block;
 }
@@ -214,16 +274,28 @@ img {
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
-    text-shadow: -1px -1px 0 #487996, 1px -1px 0 #487996, -1px 1px 0 #487996, 1px 1px 0 #487996;
+    text-shadow: -1px -1px 0 var(--title-color), 1px -1px 0 var(--title-color), -1px 1px 0 var(--title-color), 1px 1px 0 var(--title-color);
+
+    transition: text-shadow 250ms var(--cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            text-shadow: -1px -1px 0 var(--text-active), 1px -1px 0 var(--text-active), -1px 1px 0 var(--text-active), 1px 1px 0 var(--text-active);
+        }
 
 }
 
 .nav-menu__word {
 
-    color: #487996;
+    color: var(--title-color);
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .nav-list {
@@ -236,7 +308,7 @@ img {
 .nav-item__text {
 
 
-    color: #487996;
+    color: var(--title-color);
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
@@ -249,7 +321,13 @@ img {
         height: 10px;
         margin-right: 10px;
         border-radius: 3px 0;
-        background: #487996;
+        background-color: var(--title-color);
+    }
+    transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        background-color: var(--text-active);
+        color: var(--text-active);
     }
 }
 
@@ -262,11 +340,18 @@ img {
     position: relative;
     border: none;
     background-color: transparent;
-    fill: #487996;
+    color: var(--title-color);
+    transition: fill 250ms var(--cubic-bezier);
 
     @media screen and (min-width: 768px) {
         display: none;
     }
+    &:hover, &:focus {
+        color: var(--title-color);
+    }
+}
+.contacts-icon {
+    fill: var(--title-color);
 }
 
 .header-contacts {
@@ -297,6 +382,8 @@ img {
     width: 180px;
     height: 82px;
     background-color: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px #CBCBCB, inset -1px -1px 3px #FFFFFF;
 }
 
 .contacts__menu::after {
@@ -309,6 +396,8 @@ img {
     border-bottom: 15px solid #FFF;
     border-left: 10px solid #0000;
     border-right: 10px solid #0000;
+    border-radius: 2px;
+    text-shadow: 0 0 20px #000;
 }
 
 .contacts-item {
@@ -327,14 +416,37 @@ img {
     }
 }
 
+.contacts-item__tel {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: var(--title-color);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:first-child {
+        margin-bottom: 10px;
+    }
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
+}
 .contacts__tel {
     display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.01em;
+    color: var(--text-color);
+    transition: color 250ms var(--cubic-bezier);
 
     &:first-child {
         margin-bottom: 10px;
+    }
+
+    &:hover, &:focus {
+        color: var(--text-active);
     }
 }

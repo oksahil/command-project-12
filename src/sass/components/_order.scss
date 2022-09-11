@@ -21,7 +21,7 @@
     width: 100%;
     height: 24px;
     border: 1px solid transparent;
-    border-bottom: 1px solid #487996;
+    border-bottom: 1px solid var(--title-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -45,7 +45,7 @@
     width: 100%;
     height: 24px;
     border: 1px solid transparent;
-    border-bottom: 1px solid #487996;
+    border-bottom: 1px solid var(--title-color);
 
     &::placeholder {
         font-weight: 400;
@@ -70,7 +70,7 @@
     height: 199px;
     margin-top: 4px;
     resize: none;
-    border: 1px solid #487996;
+    border: 1px solid var(--title-color);
     border-radius: 50px 0px;
 
        

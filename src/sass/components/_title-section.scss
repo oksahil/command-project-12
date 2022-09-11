@@ -2,5 +2,5 @@
     @include fonts(700, 18px, 23px, null);
     text-transform: uppercase;
     
-    color: #487996;
+    color: var(--title-color);
 }
