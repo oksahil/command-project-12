@@ -81,6 +81,14 @@
         margin-left: 277px; 
     }
    }
+
+   &__item{
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   &__item:hover, &__item:focus {
+    color: var(--text-active);
+   }
 }
     
 .footer__email, .footer__tel {
@@ -89,8 +97,13 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: var(--title-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-    
+
+.footer__email:hover, .footer__email:focus, .footer__tel:hover, .footer__tel:focus{
+    color: var(--text-active);
+}
+
 .tel-top{
     margin-bottom: 8px;
 }
@@ -129,6 +142,14 @@
     
     &-item:not(:last-child){
        margin-bottom: 8px;
+    }
+
+    &-item{
+        transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-item:hover, &-item:focus{
+        color: var(--text-active);
     }
 }
     
