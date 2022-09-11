@@ -2,16 +2,16 @@
     @include fonts(700, 24px, 30px, null);
 
     color: var(--title-color);
-    margin-top: 92px;
+    
     margin-bottom: 16px;
     @media screen and (max-width:767px) {
         @include fonts(700, 36px, 45px, null);
-        margin-top: 104px;
+       
 
     }
                 @media screen and (max-width:1439px) {
                     @include fonts(700, 48px, 60px, null);
-                    margin-top: 190px;
+                    
                     margin-bottom: 24px;
         
                 }
