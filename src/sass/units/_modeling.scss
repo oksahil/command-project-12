@@ -1,46 +1,93 @@
 .modeling {
   max-width: 100%;
-  background: var(--bg-color-main);
-  // width: 280px;
 }
 .modeling__pictures {
-  // width: 280px;
-  // margin-right: auto;
-  // margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // columns: 2;
-  margin-top: 16px;
   margin-bottom: 40px;
   row-gap: 16px;
   column-gap: 20px;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 80px;
+  }
 }
-.modeling__h1 {
-  @include fonts(700, 24px, 30px, null);
+.modeling__h2 {
+  margin-top: 44px;
   margin-bottom: 16px;
+  @include fonts(700, 24px, 30px, null);
   color: var(--title-color);
+  @media screen and (min-width: 768px) {
+    @include fonts(700, 36px, 45px, null);
+  }
+  @media screen and (min-width: 1440px) {
+    @include fonts(700, 48px, 60px, null);
+    margin-bottom: 24px;
+    margin-left: 117px;
+  }
 }
 .modeling__p {
   @include fonts(300, 16px, 20px, null);
   color: var(--text-color);
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    width: 515px;
+  }
+  @media screen and (min-width: 1440px) {
+    @include fonts(300, 18px, 23px, null);
+    margin-right: 72px;
+    height: 138px;
+  }
 }
 .modeling__p-second {
   @include fonts(300, 16px, 20px, null);
   color: var(--text-color);
   margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 41px;
+    width: 515px;
+  }
+  @media screen and (min-width: 1440px) {
+    @include fonts(300, 18px, 23px, null);
+    height: 92px;
+  }
 }
-.modeling__h2 {
+.modeling__h3 {
   @include fonts(700, 18px, 23px, null);
   margin-bottom: 16px;
   color: var(--title-color);
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    @include fonts(700, 24px, 30px, null);
+  }
+  @media screen and (min-width: 1440px) {
+    @include fonts(700, 36px, 45px, null);
+    margin-bottom: 24px;
+    margin-left: 117px;
+  }
 }
-.modeling__h3 {
+.modeling__h4 {
+  margin-bottom: 16px;
   @include fonts(700, 16px, 20px, null);
   color: var(--title-color);
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    @include fonts(700, 24px, 30px, null);
+    margin-bottom: 24px;
+    width: 648px;
+  }
+  @media screen and (min-width: 1440px) {
+    @include fonts(700, 36px, 45px, null);
+    margin-bottom: 40px;
+    margin-left: 117px;
+    width: 842px;
+  }
 }
 .modeling__li {
   @include fonts(300, 16px, 20px, null);
@@ -50,20 +97,72 @@
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+  @media screen and (min-width: 1440px) {
+    @include fonts(300, 18px, 23px, null);
+  }
 }
 .modeling__ul {
   list-style: none;
+  @media screen and (min-width: 1440px) {
+    margin-left: 117px;
+  }
 }
-.modeling__img-photo {
+.modeling__npg-photo {
+  background-image: url('../images/modeling-mob-1x.png');
   margin-top: 40px;
   margin-bottom: 40px;
-  background-image: url('../images/modeling-mob-1x.png');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/modeling-mob-2x.png');
+  }
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--bg-color-main);
+  background-color: transparent;
   max-width: 100%;
   min-width: 100%;
   padding-top: 58%;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/tablet-1x-modeling.png');
+    width: 246px;
+    height: 144px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 34px;
+    padding-top: 0px;
+    max-width: 246px;
+    min-width: 246px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/tablet-2x-modeling.png');
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    right: 118px;
+    top: -127px;
+    background-image: url('../images/dtop-modeling-1x.png');
+    max-width: 555px;
+    min-width: 555px;
+    height: 301px;
+    margin-bottom: 107px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/dtop-modeling-2x.png');
+    }
+  }
+}
+
+.modeling__methods {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    position: relative;
+  }
 }
 .modeling__marker {
   position: absolute;
@@ -75,7 +174,14 @@
   height: 7px;
   border-radius: 3px 0px;
 }
-
+.modeling__text {
+  @media screen and (min-width: 1440px) {
+    height: 138px;
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 117px;
+  }
+}
 .modeling__png {
-  flex-shrink: 1;
+  max-width: calc((100vw - 60px) / 2);
 }
