@@ -8,14 +8,14 @@
   }
 }
 
-.photo__titel {
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #487996;
-  margin-bottom: 16px;
+.photo h2 {
+    margin-bottom: 16px;
+ @include media(768px) {
+    margin-bottom: 32px;
+}
+ @include media(1440px) {
+    margin-bottom: 62px;
+}
 }
 
 .photo__list {
