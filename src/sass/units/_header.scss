@@ -115,11 +115,8 @@ img {
 
 .head-menu__title {
 
+    @include fonts(400, 18px, 21px, 00.01em);
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 00.01em;
     color: var(--text-color);
     transition: color 250ms var(--cubic-bezier);
 
@@ -171,11 +168,8 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 
 .head-item__text {
 
+    @include fonts(400, 16px, 19px, 00.01em);
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 00.01em;
     color: #2b2b2b;
     transition: color 250ms var(--cubic-bezier);
 
@@ -192,12 +186,9 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 .figure-text {
 
 
+    @include fonts(700, 14px, 18px, 00.01em);
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
 
-    letter-spacing: 0.01em;
     color: var(--bg-color-main);
     transition: color 250ms var(--cubic-bezier);
 
@@ -270,9 +261,8 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 
 .nav-menu__title {
 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    @include fonts(700, 24px, 30px, 00.01em);
+
     color: #ffffff;
     text-shadow: -1px -1px 0 var(--title-color), 1px -1px 0 var(--title-color), -1px 1px 0 var(--title-color), 1px 1px 0 var(--title-color);
 
@@ -287,10 +277,10 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 
 .nav-menu__word {
 
+    @include fonts(700, 24px, 30px, 00.01em);
+
     color: var(--title-color);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+
     transition: color 250ms var(--cubic-bezier);
 
     &:hover, &:focus {
@@ -307,11 +297,9 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 
 .nav-item__text {
 
+    @include fonts(500, 24px, 30px, 00.01em);
 
     color: var(--title-color);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
 
 
     &::before {
@@ -420,10 +408,9 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 
 .contacts-item__tel {
     display: block;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.01em;
+
+    @include fonts(400, 16px, 20px, 00.01em);
+
     color: var(--text-color);
     transition: color 250ms var(--cubic-bezier);
 
@@ -437,11 +424,11 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 }
 .contacts__tel {
     display: block;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.01em;
+
+    @include fonts(400, 16px, 20px, 00.01em);
+
     color: var(--text-color);
+    
     transition: color 250ms var(--cubic-bezier);
 
     &:first-child {
