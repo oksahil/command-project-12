@@ -1,2 +1,2 @@
 !function(){var e={openMenuBtn:document.querySelector(".menu-open"),closeMenuBtn:document.querySelector(".menu-close"),menu:document.querySelector(".nav-menu"),body:document.querySelector("body")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)}();
-//# sourceMappingURL=index.f5e92d38.js.map
+//# sourceMappingURL=contacts-page.cd2ff353.js.map
