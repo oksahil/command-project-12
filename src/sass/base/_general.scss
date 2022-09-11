@@ -1,73 +1,76 @@
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Light.woff);
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Light.woff);
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Medium.woff);
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Medium.woff);
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'CeraPro';
-    src: url(./../fonts/CeraPro-Bold.woff);
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'CeraPro';
+  src: url(./../fonts/CeraPro-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'caviardreams';
-    src: url(./../fonts/caviardreams.woff);
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'caviardreams';
+  src: url(./../fonts/caviardreams.woff);
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {
-    font-family: 'CeraPro', sans-serif;
+  font-family: 'CeraPro', sans-serif;
+  background-color: var(--bg-color-main);
 
-   @media screen and (max-width: 767px) {
-
-background-color: var(--bg-color-main);
+  
+    background-image: url(/src/images/bg-mob.jpg);
+    background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: contain;
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   background-image: 
-    url(/src/images/bg-mob.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-       }
-     @media screen and (min-width: 768px) {
+    url(/src/images/bg-mob-2x.jpg);
+  }
 
-background-color: var(--bg-color-main);
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/bg-tab.jpg);
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   background-image: 
-    url(/src/images/bg-tab.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-       }  
-       @media screen and (min-width: 1200px) {
-
-background-color: var(--bg-color-main);
+    url(/src/images/bg-tab-2x.jpg);
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url(/src/images/bg.jpg);
+    max-width: 1562px;
+     @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   background-image: 
-    url(/src/images/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-       }  
+    url(/src/images/bg-2x.jpg);
+}
+  }
+}
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
-
