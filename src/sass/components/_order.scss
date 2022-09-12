@@ -1,15 +1,41 @@
 .order {
         padding-top: 92px;
-    
+        align-content: center;
             @include media (768px) {
                 padding-top: 104px;
             }
         
             @include media (1440px) {
                 padding-top: 188px;
+                padding-left: 149px;
             }
-}
+         background-image: url("/src/images/cub-mob-1x.jpg  1x");
+         background-repeat: no-repeat;
+         background-size: 280px 171px;
+    
+         @include retina {
+             background-image: url("/src/images/cub-mob-2x.jpg  2x");
+         }
+    
+         @media screen and (min-width:768px) and (max-width:1439px) {
+             background-image: url("/src/images/cub-tab-1x.jpg  1x");
+             background-size: 336px 158px;
+    
+             @include retina {
+                 background-image: url("/src/images/cub-tab-2x.jpg  2x");
+             }
+         }
+    
+         @media screen and (min-width:1440px) {
+             background-image: url("/src/images/cub-desk-1x.jpg  1x");
+             background-size: 555px 400px;
+    
+             @include retina {
+                 background-image: url("/src/images/cub-desk-2x.jpg 2x");
+             }
+         }
 
+        }
 .order-img {
     padding: 0 20px;
     margin-top: 16px;
@@ -28,7 +54,8 @@
 @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
-        gap: 32px;
+        align-content: center;
+        // gap: 32px;
     }
 }
 .order-item {
@@ -183,5 +210,34 @@
         display: flex;
         justify-content: space-between;
         margin-left: 0;
+    }
+}
+.order-imglist {
+    @media screen and (max-width:1439px) {
+        display: none;
+    }
+
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+
+    &__item {
+        filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+        
+    }
+
+    &__pict-one {
+        border-radius: 0px 45px 45px 0px;
+        width: 203px;
+    }
+
+    &__pict-two {
+        border-radius: 37px 0px;
+        width: 203px;
+    }
+
+    &__pict-three {
+        border-radius: 0px 0px 50px 0px;
+        width: 203px;
     }
 }
