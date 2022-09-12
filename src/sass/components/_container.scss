@@ -5,15 +5,21 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    @include media(480px) {
-        max-width: 480px;
+@media screen and (min-width: 480px) {
+        .container {
+            max-width: 480px;
+        }
     }
 
-    @include media(768px) {
-        max-width: 768px;
+    @media screen and (min-width: 768px) {
+        .container {
+            max-width: 768px;
+        }
     }
 
-    @include media(1440px) {
-        max-width: 1440px;
+    @media screen and (min-width: 1440px) {
+        .container {
+            max-width: 1200px;
+        }
     }
 }

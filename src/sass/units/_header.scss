@@ -14,15 +14,12 @@
 
 
 
-// .header>.container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
-.header__list {
+.header>.container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+
 
 img {
     display: block;
@@ -38,7 +35,7 @@ img {
     border: none;
     color: var(--title-color);
     transition: color 250ms var(--cubic-bezier);
-
+    
     @include media(1440px) {
         position: absolute;
         display: none;
