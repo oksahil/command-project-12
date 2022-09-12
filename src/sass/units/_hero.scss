@@ -24,6 +24,32 @@
         line-height: calc(42 / 36);
     }
 }
+    .rectengule-left {
+        position: absolute;
+        top: -34px;
+        left: 0;
+
+        width: 74px;
+        height: 74px;
+
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 35px 35px 0px;
+
+        background-color: aqua;
+    }
+    .rectangule-right {
+        position: absolute;
+        top: -34px;
+        right: 0;
+
+        width: 74px;
+        height: 74px;
+
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 35px 0px 0px 35px;
+
+        background-color: aqua;
+    }
 
 .hero__title {
     width: 280px;
