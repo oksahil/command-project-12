@@ -95,14 +95,14 @@
 }
 
 .modeling__npg-photo {
-  background-image: url(/src/images/modeling-mob-1x.png);
+  background-image: url(/src/images/modeling-mob-2x.jpg);
   margin-top: 40px;
   margin-bottom: 40px;
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(/src/images/modeling-mob-2x.png);
+    background-image: url(/src/images/modeling-mob-2x.jpg);
   }
 
   background-size: cover;
@@ -113,7 +113,7 @@
   padding-top: 58%;
 
   @media screen and (min-width: 768px) {
-    background-image: url(/src/images/tablet-1x-modeling.png);
+    background-image: url(/src/images/modeling-tab-2x.jpg);
     width: 246px;
     height: 144px;
     margin-top: 0px;
@@ -126,7 +126,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(/src/images/tablet-2x-modeling.png);
+      background-image: url(/src/images/modeling-tab.jpg);
     }
   }
 
@@ -134,7 +134,7 @@
     position: absolute;
     right: 118px;
     top: -127px;
-    background-image: url(/src/images/dtop-modeling-1x.png);
+    background-image: url(/src/images/modeling.jpg);
     max-width: 555px;
     min-width: 555px;
     height: 301px;
@@ -143,7 +143,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(/src/images/dtop-modeling-2x.png);
+      background-image: url(/src/images/modeling-2x.jpg);
     }
   }
 }
