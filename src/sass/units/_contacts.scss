@@ -7,15 +7,25 @@
     padding-top: 188px;
     }
 }
-.smile-list {
-    display: flex;
-   
+.contacts-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
 }
-.smile-item {
-    height: 22px;
-    
+
+.contacts-item {
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
 }
-.smile {
-    width: 22px;
-    height: 22px;
-}
+
+.text-smile::after {
+    content: "";
+    width: 49px;
+    height: 49px;
+    background-size: contain;
+    background-image: url("/src/images/emoji.png");
+        }
+
