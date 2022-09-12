@@ -1,59 +1,59 @@
 .contacts {
-    padding-top: 92px;
-    @include media (768px) {
+  padding-top: 92px;
+  @include media(768px) {
     padding-top: 104px;
-    }
-    @include media (1440px) {
+  }
+  @include media(1440px) {
     padding-top: 188px;
-    }
+  }
 }
 .contacts-list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        gap: 32px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
 }
 
 .contacts-item {
-    @media screen and (min-width: 768px) {
-        width: 336px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
 }
-
-// .text-smile::after {
-//     content: '';
-//     width: 49px;
-//     height: 49px;
-//     background-size: contain;
-//     background-image: url("/src/images/emoji.png");
-//         }
+.order-text.smile {
+  position: relative;
+}
+.emoji {
+  display: inline-block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  margin-left: 16px;
+}
 
 .contacts-structure {
-@media screen and (min-width: 1440px) {
-    width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        margin-left: 0;
-        justify-content: space-between;
-        
-    }
-}
-.forms {
-    margin-top: 41px;
+  @media screen and (min-width: 1440px) {
     width: 100%;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row-reverse;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+}
+.forms {
+  margin-top: 41px;
+  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: 480px) {
-        max-width: 400px;
-        // align-content: center;
-    }
+  @media screen and (min-width: 480px) {
+    max-width: 400px;
+    // align-content: center;
+  }
 
-    @media screen and (min-width: 1440px) {
-        width: 555px;
-        margin-left: 0;
-    }
-
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+    margin-left: 0;
+  }
 }
