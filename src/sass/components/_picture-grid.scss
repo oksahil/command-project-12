@@ -13,7 +13,7 @@
     overflow: hidden;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     background-color: teal;
-    background-image: url(../images/order2-desk.jpg);
+    background-image: url(/src/images/order2-desk.jpg);
     /* @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -27,7 +27,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .pictures-box__item {
-        background-image: url(../images/order2-desk-2x.jpg);
+        background-image: url(/src/images/order1_1-desk-2x.jpg);
     }
 }
 
