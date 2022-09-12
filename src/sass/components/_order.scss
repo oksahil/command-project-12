@@ -28,6 +28,17 @@
 .forms {
     margin-top: 41px;
     width: 100%;
+    @media screen and (min-width: 480px) {
+            max-width: 400px;
+            align-content: center;
+        }
+    
+    
+        @media screen and (min-width: 1440px) {
+    
+            max-width: 555px;
+
+        }
 }
 .order-form-choice {
     width: 100%;
