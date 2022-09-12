@@ -1,13 +1,23 @@
-.section {
-  padding-bottom: 156px;
-}
+// .section {
+//   padding-bottom: 156px;
+// }
 
-.container {
-  @media screen and (min-width: 1440px) {
-    padding: 0 149px;
+// .container {
+//   @media screen and (min-width: 1440px) {
+//     padding: 0 149px;
+//   }
+// }
+.photo {
+margin-bottom: 40px;
+
+  @include media(768px) {
+    margin-bottom: 60px;
+  }
+
+  @include media(1440px) {
+    margin-bottom: 120px;
   }
 }
-
 .photo__titel {
   font-family: 'Cera Pro';
   font-style: normal;
