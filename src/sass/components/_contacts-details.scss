@@ -3,6 +3,7 @@
     padding-bottom: 60px;
     @media screen and (min-width: 768px) {
         display: flex;
+        
     }
 }
 
@@ -17,15 +18,18 @@
     line-height: 1.28;
     color: #487996;
     margin-bottom: 8px;
+    text-align: left;
     @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 1.25;
+    text-align: center;
         
     }
     @media screen and (min-width: 1440px) {
         font-size: 36px;
         line-height: 1.25;
         margin-bottom: 18px;
+        text-align: right;
     }
 }
 
@@ -37,9 +41,14 @@
     text-transform: capitalize;
     color: #2B2B2B;
     margin-bottom: 8px;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
     @media screen and (min-width: 1440px) {
         font-size: 18px;
         line-height: 1.11;
+        text-align: right;
     }
 }
 
@@ -49,7 +58,26 @@
 
 .conntent-time {
     @media screen and (min-width: 768px) and (max-width: 1439px) {
-        margin-left: 0;
+        margin-left: 89px;
+    }
+}
+
+
+.contacts-details__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: #2B2B2B;
+    margin-bottom: 8px;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+    line-height: 1.11;
+    text-align: right;
     }
 }
 
@@ -59,14 +87,17 @@
     line-height: 1.25;
     text-transform: capitalize;
     color: #2B2B2B;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        line-height: 1.11;
+        text-align: right;
+    }
+    
     
 }
 
-.contacts-details__item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    text-transform: capitalize;
-    color: #2B2B2B;
-    margin-bottom: 8px;
-}
+
