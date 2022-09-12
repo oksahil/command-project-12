@@ -37,7 +37,17 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    color: var(--text-color);
+    color: var(--text-color);}
+    .triangle {
+    &::before {
+        content: '';
+            margin-right: 25px;
+            width: 25px;
+            height: 25px;
+            color: black;
+            
+            // background-image: url("/src/images/img-triangle.png");
+        }
 }
 
 .order-form {
