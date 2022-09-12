@@ -1,38 +1,52 @@
 .hero {
     position: relative;
-    padding-top: 34px;
-    padding-bottom: 18px;
+    padding-top: 98px;
+    // padding-bottom: 18px;
     
     font-family: 'caviardreams';
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(19 / 16);
+    line-height: calc(19px / 16px);
     text-align: center;
 
     color: var(--text-color);
 
     @include media (768px) {
         font-size: 18px;
-        line-height: calc(21 / 18);
+        line-height: calc(21px / 18px);
+        padding-top: 104px;
+        
     }
+         @include media (1440px) {
+             font-size: 36px;
+             line-height: calc(42px / 36px);
+             padding-top: 188px;
+    
+         }
 
 }
 
 .hero__title {
-    width: 280px;
+    // width: 280px;
     margin: auto;
 
     font-family: 'caviardreams';
     font-weight: 400;
     font-size: 18px;
-    line-height: calc(21 / 18);
+    line-height: calc(21px / 18px);
 
     @include media (768px) {
-        width: 336px;
+        // width: 336px;
 
         font-size: 24px;
-        line-height: calc(28 / 24);
+        line-height: calc(28px / 24px);
     }
+         @include media (1440px) {
+            //  width: 336px;
+    
+             font-size: 48px;
+             line-height: calc(56px/ 48px);
+         }
 }
 
 .hero-fonpict__anchor {

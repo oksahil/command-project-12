@@ -7,6 +7,7 @@
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
+    background-color: #ffffff;
 
 }
 
@@ -18,6 +19,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 
 img {
     display: block;
@@ -31,12 +33,19 @@ img {
     display: block;
     background-color: transparent;
     border: none;
-    fill: #487996;
-    @media screen and (min-width: 1440px) {
-            position: absolute;
-            display: none;
-        }
-
+    color: var(--title-color);
+    transition: color 250ms var(--cubic-bezier);
+    
+    @include media(1440px) {
+        position: absolute;
+        display: none;
+    }
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
+}
+.icon-open, .icon-close {
+    fill: currentColor;
 }
 
 .menu-button .icon-close {
@@ -58,8 +67,27 @@ img {
 .menu-open__wrap {
     display: flex;
     justify-content: center;
-        @media screen and (min-width: 1440px) {
+
+    @include media(1440px) {
         display: none;
+    }
+}
+
+.head-menu__link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid #008CEF;
+    border-left: 5px solid #0000;
+    border-right: 5px solid #0000;
+    border-radius: 2px;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
     }
 }
 
@@ -67,7 +95,8 @@ img {
 
 .head-menu {
     display: none;
-    @media screen and (min-width: 1440px) {
+
+    @include media(1440px) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,7 +107,7 @@ img {
     position: absolute;
     display: none;
 
-    @media screen and (min-width: 1440px) {
+    @include media(1440px) {
         display: flex;
         align-items: center;
         gap: 56px;
@@ -87,20 +116,40 @@ img {
 
 .head-menu__title {
 
+    @include fonts(400, 18px, 21px, 00.01em);
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 00.01em;
-    color: #2b2b2b;
+    color: var(--text-color);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .head-menu__offer {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
+
 .head-menu__list {
     display: none;
+    position: absolute;
+    top: 90%;
+    left: -65%;
+    width: 140px;
+    background-color: transparent;
+    text-align: center;
+
+
+}
+
+.head-menu__content>.head-menu__offer:hover .head-menu__list {
+    display: block;
+}
+
+body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
+    display: block;
 }
 
 .head-menu__word {
@@ -110,17 +159,24 @@ img {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 00.01em;
-    color: #2b2b2b;
+    color: var(--text-color);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .head-item__text {
 
+    @include fonts(400, 16px, 19px, 00.01em);
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 00.01em;
     color: #2b2b2b;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 
@@ -131,13 +187,15 @@ img {
 .figure-text {
 
 
+    @include fonts(700, 14px, 18px, 00.01em);
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
 
-    letter-spacing: 0.01em;
-    color: #BDBDBD;
+    color: var(--bg-color-main);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .contacts-item {
@@ -148,13 +206,13 @@ img {
     &:last-child {
         display: none;
 
-        @media screen and (min-width: 768px) {
+        @include media(768px) {
             display: block;
             margin-left: 27px;
         }
     }
 
-    @media screen and (min-width: 768px) {
+        @include media(768px) {
         &:first-child {
             margin-right: 27px;
         }
@@ -168,31 +226,25 @@ img {
 
 .contacts__phone-svg {
     align-items: center;
-    fill: #487996;
+    fill: currentColor;
     margin-right: 5px;
 
 }
 
 .nav-menu {
+    position: absolute;
+    z-index: 2;
     display: none;
     width: 100vw;
     height: 100vh;
 
     background-color: #ffffff;
+
     &.is-open {
         display: block;
     }
 
 }
-
-.menu-close {
-    position: absolute;
-    display: none;
-    background-color: transparent;
-    border: none;
-    fill: #487996;
-}
-
 .nav-menu .icon-close {
     display: block;
 }
@@ -210,20 +262,31 @@ img {
 
 .nav-menu__title {
 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    @include fonts(700, 24px, 30px, 00.01em);
+
     color: #ffffff;
-    text-shadow: -1px -1px 0 #487996, 1px -1px 0 #487996, -1px 1px 0 #487996, 1px 1px 0 #487996;
+    text-shadow: -1px -1px 0 var(--title-color), 1px -1px 0 var(--title-color), -1px 1px 0 var(--title-color), 1px 1px 0 var(--title-color);
+
+    transition: text-shadow 250ms var(--cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            text-shadow: -1px -1px 0 var(--text-active), 1px -1px 0 var(--text-active), -1px 1px 0 var(--text-active), 1px 1px 0 var(--text-active);
+        }
 
 }
 
 .nav-menu__word {
 
-    color: #487996;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    @include fonts(700, 24px, 30px, 00.01em);
+
+    color: var(--title-color);
+
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
+    }
 }
 
 .nav-list {
@@ -235,11 +298,9 @@ img {
 
 .nav-item__text {
 
+    @include fonts(500, 24px, 30px, 00.01em);
 
-    color: #487996;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
+    color: var(--title-color);
 
 
     &::before {
@@ -249,7 +310,12 @@ img {
         height: 10px;
         margin-right: 10px;
         border-radius: 3px 0;
-        background: #487996;
+        background-color: var(--title-color);
+    }
+    transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+
+    &:hover, &:focus {
+        color: var(--text-active);
     }
 }
 
@@ -262,11 +328,21 @@ img {
     position: relative;
     border: none;
     background-color: transparent;
-    fill: #487996;
+    color: var(--title-color);
+    transition: fill 250ms var(--cubic-bezier);
 
-    @media screen and (min-width: 768px) {
+    @include media(768px) {
         display: none;
     }
+    &:hover, &:focus {
+        color: var(--title-color);
+    }
+}
+.contacts__phone-icon {
+    fill: var(--title-color);
+}
+.icon-phone {
+    fill: var(--title-color);
 }
 
 .header-contacts {
@@ -274,7 +350,7 @@ img {
     align-items: center;
     list-style: none;
 
-    @media screen and (min-width: 768px) {
+    @include media(768px) {
         display: flex;
     }
 }
@@ -285,7 +361,7 @@ img {
     margin-right: -250%;
     right: 0;
 
-    @media screen and (min-width: 768px) {
+    @include media(768px) {
         display: none;
     }
 }
@@ -293,10 +369,12 @@ img {
 .contacts__menu {
     position: relative;
 
-    padding: 5px 15px;
-    width: 180px;
-    height: 82px;
+    padding: 16px 4px;
+    width: 160px;
+    height: 80px;
     background-color: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px #CBCBCB, inset -1px -1px 3px #FFFFFF;
 }
 
 .contacts__menu::after {
@@ -309,6 +387,8 @@ img {
     border-bottom: 15px solid #FFF;
     border-left: 10px solid #0000;
     border-right: 10px solid #0000;
+    border-radius: 2px;
+    text-shadow: 0 0 20px #000;
 }
 
 .contacts-item {
@@ -316,7 +396,7 @@ img {
         margin-right: 27px;
     }
 
-    @media screen and (min-width: 768px) {
+        @include media(768px) {
         &:first-child {
             margin-right: 27px;
         }
@@ -327,14 +407,36 @@ img {
     }
 }
 
-.contacts__tel {
+.contacts-item__tel {
     display: block;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.01em;
+
+    @include fonts(400, 16px, 20px, 00.01em);
+
+    color: var(--text-color);
+    transition: color 250ms var(--cubic-bezier);
 
     &:first-child {
         margin-bottom: 10px;
+    }
+
+    &:hover, &:focus {
+        color: var(--title-color);
+    }
+}
+.contacts__tel {
+    display: block;
+
+    @include fonts(400, 16px, 20px, 00.01em);
+
+    color: var(--text-color);
+    
+    transition: color 250ms var(--cubic-bezier);
+
+    &:first-child {
+        margin-bottom: 10px;
+    }
+
+    &:hover, &:focus {
+        color: var(--text-active);
     }
 }

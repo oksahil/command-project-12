@@ -1,6 +1,15 @@
 .modeling {
   max-width: 100%;
   // width: 280px;
+      padding-top: 92px;
+      
+        @include media (768px) {
+          padding-top: 104px;
+        }
+      
+        @include media (1440px) {
+          padding-top: 188px;
+        }
 }
 .modeling__pictures {
   display: flex;
@@ -10,9 +19,7 @@
   row-gap: 16px;
   column-gap: 20px;
 }
-.modeling__h1 {
-  margin-bottom: 16px;
-}
+
 .modeling__p {
   margin-bottom: 16px;
 }
@@ -41,7 +48,7 @@
   left: -15px;
   top: 50%;
   transform: translate(0, -50%);
-  background-color: #487996;
+  background-color: var(--title-color);
   width: 7px;
   height: 7px;
   border-radius: 3px 0px;

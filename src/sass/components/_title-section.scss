@@ -2,5 +2,16 @@
     @include fonts(700, 18px, 23px, null);
     text-transform: uppercase;
     
-    color: #487996;
+    color: var(--title-color);
+    
+    margin-bottom: 16px;
+    @media screen and (min-width:768px) {
+    @include fonts(700, 24px, 30px, null);
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width:1440px) {
+    @include fonts(700, 36px, 45px, null);
+             
+             margin-bottom: 40px;
+    }
 }
