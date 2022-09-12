@@ -1,0 +1,70 @@
+.pictures-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 438px;
+    height: 294px;
+}
+
+.pictures-box__item {
+    position: absolute;
+    width: 138px;
+    height: 138px;
+    overflow: hidden;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    background-color: teal;
+    background-image: url(../images/order2-desk.jpg);
+    /* @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/order2-desk-2x.jpg); */
+    background-repeat: no-repeat;
+    background-size: 438px 294px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .pictures-box__item {
+        background-image: url(../images/order2-desk-2x.jpg);
+    }
+}
+
+.pictbox--one {
+    border-radius: 0px 72px 0px 0px;
+}
+
+.pictbox--two {
+    top: 9px;
+    left: 152px;
+    border-radius: 0px 0px 0px 72px;
+    background-position: -152px -9px;
+}
+
+.pictbox--three {
+    right: 0;
+    border-radius: 72px 0px;
+    background-position: top right;
+}
+
+.pictbox--four {
+    left: 2px;
+    bottom: 10px;
+    border-radius: 0px 72px;
+    background-position: bottom -10px left -2px;
+}
+
+.pictbox--five {
+    bottom: 0;
+    left: 146px;
+    border-radius: 72px;
+    background-position: 50% 100%;
+}
+
+.pictbox--six {
+    bottom: 9px;
+    right: 10px;
+    border-radius: 0px 0px 72px 0px;
+    background-position: bottom -9px right -10px;
+}
