@@ -5,17 +5,14 @@
     
     margin-bottom: 16px;
     @media screen and (max-width:767px) {
-.title-page {
-
         @include fonts(700, 36px, 45px, null);
        
-}
+
     }
                 @media screen and (max-width:1439px) {
-                    .title-page {
                     @include fonts(700, 48px, 60px, null);
                     
-                    margin-bottom: 24px;}
+                    margin-bottom: 24px;
         
                 }
 }
