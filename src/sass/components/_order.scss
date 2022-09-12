@@ -207,7 +207,7 @@
 }
 .structure-list {
     @media screen and (min-width: 1440px) {
-        width: 100%;
+        max-width: 1440px;
         display: flex;
         justify-content: space-between;
         margin-left: 0;
