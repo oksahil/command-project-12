@@ -1,19 +1,25 @@
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    @include media(480px) {
-        max-width: 480px;
-    }
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 
-    @include media(768px) {
-        max-width: 768px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    @include media(1440px) {
+    @media screen and (min-width: 1440px) {
+        
         max-width: 1440px;
+        padding-left: 149px;
+        padding-right: 149px;
     }
 }
+

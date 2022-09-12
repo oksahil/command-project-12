@@ -3,16 +3,34 @@
     padding-bottom: 60px;
 }
 
+.conntent {
+    margin-bottom: 24px;
+}
+
 .contacts-details__title {
 
     font-weight: 700;
     font-size: 18px;
     line-height: 1.28;
     color: #487996;
+    margin-bottom: 8px;
+}
+
+.address__text {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: #2B2B2B;
+    margin-bottom: 8px;
+}
+
+.conntent-mail {
+    margin-bottom: 24px;
 }
 
 .contacts-details__text {
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;

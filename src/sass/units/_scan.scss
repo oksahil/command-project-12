@@ -1,40 +1,35 @@
-.scanning > .container {
-  padding-top: 18px;
-  padding-bottom: 40px;
+.scanning {
+  padding-top: 92px;
 
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
+  @include media(768px) {
+    padding-top: 104px;
   }
 
-  @media screen and (min-width: 1440px) {
-    padding-top: 46px;
-    padding-bottom: 22px;
-    padding-left: 149px;
-    padding-right: 149px;
+  @include media(1440px) {
+    padding-top: 188px;
   }
 }
 
-.scanning__title {
-  font-style: 400;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #487996;
+// .scanning__title {
+//   font-style: 400;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 30px;
+//   color: #487996;
 
-  margin-bottom: 16px;
+//   margin-bottom: 16px;
 
-  @media screen and (min-width: 768px) {
-    font-size: 36px;
-    line-height: 45px;
-  }
+//   @media screen and (min-width: 768px) {
+//     font-size: 36px;
+//     line-height: 45px;
+//   }
 
-  @media screen and (min-width: 1440px) {
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 24px;
-  }
-}
+//   @media screen and (min-width: 1440px) {
+//     font-size: 48px;
+//     line-height: 60px;
+//     margin-bottom: 24px;
+//   }
+// }
 
 .scanning__wrapper {
   @media screen and (min-width: 768px) {
@@ -155,44 +150,18 @@
 
 // <!-- Scan Process -->
 
-.scan-process {
-  & .container {
-    text-align: center;
-    // position: relative;
-    @media screen and (min-width: 768px) {
-      padding-left: 32px;
-      padding-right: 32px;
-      text-align: center;
-    }
+.scan-process > .container {
+  padding-top: 40px;
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 22px;
+    width: 1440px;
   }
 }
-
-// .scan-process__decor--one {
-//   position: absolute;
-//   width: 73.65px;
-//   height: 73.65px;
-//   top: 120px;
-//   right: -18px;
-
-//   background: #ffffff;
-
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 25px 0px;
-//   transform: rotate(90deg);
-// }
-
-// .scan-process__decor--two {
-//   position: absolute;
-//   width: 73.65px;
-//   height: 73.65px;
-//   top: 146px;
-//   left: -18px;
-
-//   background: #ffffff;
-
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 0px 35px;
-// }
 
 .scan-process__title {
   font-style: 400;
@@ -204,15 +173,9 @@
 
   margin-bottom: 16px;
 
-  @media screen and (max-width: 767px) {
-    margin-right: 45px;
-  }
-
   @media screen and (min-width: 768px) {
-    text-align: left;
     margin-bottom: 24px;
     margin-left: 28px;
-
     font-size: 24px;
     line-height: 30px;
   }
@@ -230,7 +193,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
+  width: 100%;
   height: 380px;
 
   @media screen and (min-width: 768px) {
@@ -258,7 +221,7 @@
 
 .scan-process__item {
   position: relative;
-  width: 129.54px;
+  width: calc(50% - 10px);
   height: 182px;
 
   background: #ffffff;
