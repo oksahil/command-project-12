@@ -6,7 +6,21 @@
 .conntent {
     margin-bottom: 24px;
 }
-
+.tel-email-list {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: start;
+            gap: 60px;
+}
+}
+.details-list {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+}
 .contacts-details__title {
 
     font-weight: 700;
