@@ -1,12 +1,13 @@
 .order {
         padding-top: 92px;
-    
+        align-content: center;
             @include media (768px) {
                 padding-top: 104px;
             }
         
             @include media (1440px) {
                 padding-top: 188px;
+                padding-left: 149px;
             }
 }
 
@@ -183,5 +184,34 @@
         display: flex;
         justify-content: space-between;
         margin-left: 0;
+    }
+}
+.order-imglist {
+    @media screen and (max-width:1439px) {
+        display: none;
+    }
+
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+
+    &__item {
+        filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+        
+    }
+
+    &__pict-one {
+        border-radius: 0px 45px 45px 0px;
+        width: 203px;
+    }
+
+    &__pict-two {
+        border-radius: 37px 0px;
+        width: 203px;
+    }
+
+    &__pict-three {
+        border-radius: 0px 0px 50px 0px;
+        width: 203px;
     }
 }
