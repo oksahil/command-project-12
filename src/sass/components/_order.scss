@@ -19,19 +19,23 @@
     
          @media screen and (min-width:768px) and (max-width:1439px) {
              background-image: url(/src/images/cub-tab-1x.jpg);
+            background-repeat: no-repeat;
              background-size: 336px 158px;
          }
              @include retina {
                  background-image: url(/src/images/cub-tab-2x.jpg);
+                background-repeat: no-repeat;
              }
          
     
          @media screen and (min-width:1440px) {
              background-image: url(/src/images/cub-desk-2x.jpg);
+            background-repeat: no-repeat;
              background-size: 555px 400px;
          }
              @include retina {
                  background-image: url(/src/images/cub-desk-2x.jpg);
+                background-repeat: no-repeat;
              }
                          
          }
