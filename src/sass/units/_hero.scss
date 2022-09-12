@@ -1,52 +1,55 @@
 .hero {
-    position: relative;
-    padding-top: 98px;
-    // padding-bottom: 18px;
+    & .container {position: relative;}
+
+    padding-top: 34px;
+    padding-bottom: 18px;
     
     font-family: 'caviardreams';
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(19px / 16px);
+    line-height: calc(19 / 16);
     text-align: center;
 
     color: var(--text-color);
 
     @include media (768px) {
         font-size: 18px;
-        line-height: calc(21px / 18px);
-        padding-top: 104px;
-        
+        line-height: calc(21 / 18);
     }
-         @include media (1440px) {
-             font-size: 36px;
-             line-height: calc(42px / 36px);
-             padding-top: 188px;
-    
-         }
+    @include media (1440px) {
+        padding-top: 140px;
+        padding-bottom: 120px;
 
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
 }
 
 .hero__title {
-    // width: 280px;
+    width: 280px;
     margin: auto;
 
     font-family: 'caviardreams';
     font-weight: 400;
     font-size: 18px;
-    line-height: calc(21px / 18px);
+    line-height: calc(21 / 18);
 
     @include media (768px) {
-        // width: 336px;
+        width: 336px;
 
         font-size: 24px;
-        line-height: calc(28px / 24px);
+        line-height: calc(28 / 24);
     }
-         @include media (1440px) {
-            //  width: 336px;
-    
-             font-size: 48px;
-             line-height: calc(56px/ 48px);
-         }
+    @include media (1440px) {
+        width: 630px;
+
+        font-size: 48px;
+        line-height: calc(56 / 48);
+        text-align: center;
+    }
+}
+.jump {
+    @media screen and (max-width:1439px) {display: none;}
 }
 
 .hero-fonpict__anchor {
@@ -63,12 +66,19 @@
     bottom: 70px;
 
     fill: #008CEF;
+
+    @include media (1440px) {
+        height: 32px;
+        width: 32px;
+    }
 }
 
 .hero-fonpict__pict {
     width: 74px;
     display: block;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+    @include media (1440px) {width: 144px;}
 }
 
 .pict--one {
@@ -136,6 +146,9 @@
         margin-top: 60px;
         margin-bottom: 60px;
     }
+    @include media (1440px) {
+        gap: 31px;
+    }
 
     &__pict-one {
         display: block;
@@ -156,6 +169,7 @@
 .hero-imglist__item {
     width: 100%;
     @include media (768px) {width: 114px;}
+    @include media (1440px) {width: 203px;}
 
     & img {
         filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
