@@ -1,6 +1,6 @@
 .order {
         padding-top: 92px;
-        
+    
             @include media (768px) {
                 padding-top: 104px;
             }
@@ -24,10 +24,25 @@
     text-align: left;
     margin-top: 16px;
 }
-
+.order-list {
+@media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+}
+.order-item {
+    width: 336px;
+}
+.title-center {
+    text-align: center;
+}
 .forms {
     margin-top: 41px;
     width: 100%;
+    display: flex;
+        margin-left: auto;
+        margin-right: auto;
     @media screen and (min-width: 480px) {
             max-width: 400px;
             align-content: center;
