@@ -1,8 +1,8 @@
 .hero {
     & .container {position: relative;}
 
-    padding-top: 34px;
-    padding-bottom: 18px;
+    padding-top: 92px;
+    padding-bottom: 40px;
     
     font-family: 'caviardreams';
     font-weight: 400;
@@ -13,6 +13,9 @@
     color: var(--text-color);
 
     @include media (768px) {
+        padding-top: 102px;
+        padding-bottom: 60px;
+
         font-size: 18px;
         line-height: calc(21 / 18);
     }
@@ -26,13 +29,13 @@
 }
     .rectangule {
         position: absolute;
-        top: -34px;
+        top: -92px;
 
         width: 74px;
         height: 74px;
 
         box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-        background-color: aqua;
+        background-color: #FFFFFF;
 
         @include media (480px) {display: none;}
     }
@@ -62,9 +65,6 @@
         text-align: center;
     }
 }
-.jump {
-    @media screen and (max-width:1439px) {display: none;}
-}
 
 .hero-fonpict__anchor {
     cursor: pointer;
@@ -76,12 +76,15 @@
     }
 
     position: absolute;
-    left: 135px;
-    bottom: 70px;
+    left: 134px;
+    bottom: 72px;
 
     fill: #008CEF;
 
     @include media (1440px) {
+        left: 230px;
+        bottom: 9px;
+
         height: 32px;
         width: 32px;
     }
@@ -101,10 +104,14 @@
     }
 
     position: absolute;
-    top: 0;
+    top: -30px;
     left: 105px;
 
     border-radius: 50%;
+    @include media (1440px) {
+        top: 0;
+        left: 174px;
+    }
 }
 
 .pict--two {
@@ -113,10 +120,14 @@
     }
 
     position: absolute;
-    top: 8px;
+    top: -26px;
     right: 32px;
 
     border-radius: 0px 0px 72px 0px;
+    @include media (1440px) {
+        top: 5px;
+
+    }
 }
 
 .pict--three {
@@ -125,10 +136,14 @@
     }
 
     position: absolute;
-    top: 288px;
+    bottom: -18px;
     left: 32px;
 
     border-radius: 50%;
+    @include media (1440px) {
+        bottom: -120px;
+        left: 30px;
+    }
 }
 
 .pict--four {
@@ -140,8 +155,11 @@
     top: 226px;
     right: 32px;
 
-    display: block;
     border-radius: 72px 72px 0px 0px;
+    @include media (1440px) {
+        top: 437px;
+
+    }
 }
 
 .hero-imglist {
@@ -167,6 +185,7 @@
     &__pict-one {
         display: block;
         border-radius: 0px 35px 0px 0px;
+        @include media (1440px) {border-radius: 0px 72px 0px 0px;}
     }
 
     &__pict-two {
@@ -177,6 +196,7 @@
     &__pict-three {
         display: block;
         border-radius: 0px 25px;
+        @include media (1440px) {border-radius: 0px 72px;}
     }
 }
 
