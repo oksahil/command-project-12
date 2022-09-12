@@ -177,11 +177,11 @@
         fill: blue;
     }
 }
-.structure-lis {
+.structure-list {
     @media screen and (min-width: 1440px) {
         width: 100%;
         display: flex;
-        align-content: space-between;
+        justify-content: space-between;
         margin-left: 0;
     }
 }
