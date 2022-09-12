@@ -75,6 +75,24 @@
   }
 }
 
+// .scanning__text--mod {
+//   font-style: 400;
+//   font-weight: 300;
+//   font-size: 16px;
+//   line-height: 20px;
+//   color: #2b2b2b;
+//   z-index: 2;
+
+//   @media screen and (min-width: 1440px) {
+//     width: 515px;
+//     height: 92px;
+//     text-align: left;
+
+//     font-size: 18px;
+//     line-height: 23px;
+//   }
+// }
+
 .scanning__text + .scanning__text {
   margin-top: 16px;
   @media screen and (min-width: 1440px) {
@@ -157,42 +175,12 @@
 
 .scan-process {
   & .container {
-    text-align: center;
-    // position: relative;
     @media screen and (min-width: 768px) {
       padding-left: 32px;
       padding-right: 32px;
-      text-align: center;
     }
   }
 }
-
-// .scan-process__decor--one {
-//   position: absolute;
-//   width: 73.65px;
-//   height: 73.65px;
-//   top: 120px;
-//   right: -18px;
-
-//   background: #ffffff;
-
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 25px 0px;
-//   transform: rotate(90deg);
-// }
-
-// .scan-process__decor--two {
-//   position: absolute;
-//   width: 73.65px;
-//   height: 73.65px;
-//   top: 146px;
-//   left: -18px;
-
-//   background: #ffffff;
-
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 0px 35px;
-// }
 
 .scan-process__title {
   font-style: 400;
@@ -204,15 +192,9 @@
 
   margin-bottom: 16px;
 
-  @media screen and (max-width: 767px) {
-    margin-right: 45px;
-  }
-
   @media screen and (min-width: 768px) {
-    text-align: left;
     margin-bottom: 24px;
     margin-left: 28px;
-
     font-size: 24px;
     line-height: 30px;
   }
@@ -230,7 +212,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
+  width: 100%;
   height: 380px;
 
   @media screen and (min-width: 768px) {
@@ -258,7 +240,7 @@
 
 .scan-process__item {
   position: relative;
-  width: 129.54px;
+  width: calc(50% - 10px);
   height: 182px;
 
   background: #ffffff;
