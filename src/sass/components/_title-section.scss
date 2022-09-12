@@ -5,11 +5,11 @@
     color: var(--title-color);
     
     margin-bottom: 16px;
-    @media screen and (max-width:767px) {
+    @media screen and (min-width:768px) {
     @include fonts(700, 24px, 30px, null);
         margin-bottom: 24px;
     }
-    @media screen and (max-width:1439px) {
+    @media screen and (min-width:1440px) {
     @include fonts(700, 36px, 45px, null);
              
              margin-bottom: 40px;
