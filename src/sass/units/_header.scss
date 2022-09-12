@@ -1,13 +1,13 @@
 //header style
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 3;
 
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: var(--bg-color-main);
+    background-color: transparent;
 
 
 }
@@ -262,7 +262,8 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
 
 .nav-menu {
     position: fixed;
-    z-index: 2;
+    top: 0;
+    z-index: -2;
     display: none;
     width: 100vw;
     height: 100vh;
@@ -285,7 +286,7 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
     gap: 24px;
     text-align: center;
 
-    padding-top: 40px;
+    padding-top: 112px;
     padding-bottom: 102px;
 }
 
