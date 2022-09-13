@@ -7,7 +7,6 @@
             }
         @include media (1440px) {
             padding-top: 188px;
-            padding-left: 149px;
         }
                      
          }
@@ -15,6 +14,10 @@
     @include media (768px) {
         display: flex;
         justify-content: space-between;
+    }
+    @include media (768px) {
+        justify-content: flex-start;
+        gap: 32px;
     }
 }
 
@@ -28,12 +31,15 @@
 
     @include media (768px) {
         width: 336px;
+        height: 158px;
         background-image: url(/src/images/cub-tab-1x.jpg);
         background-repeat: no-repeat;
         background-size: 336px 158px;
     }
         
     @include media (1440px) {
+        width: 555px;
+        height: 400px;
         background-image: url(/src/images/cub-desk-1x.jpg);
         background-repeat: no-repeat;
         background-size: 555px 400px;
@@ -48,11 +54,12 @@
         @include media (768px) {
             background-image: url(/src/images/cub-tab-2x.jpg);}
         @include media (1440px) {
-            background-image: url(/src/images/cub-tab-2x.jpg);}
+            background-image: url(/src/images/cub-desk-2x.jpg);}
     }
 }
 
 .order-top__text {
+    position: relative;
     
     font-weight: 300;
     font-size: 16px;
@@ -60,10 +67,45 @@
     color: var(--text-color);
     width: 100%;
     text-align: left;
-    margin-top: 16px;
 
     @include media (768px) {
         width: 336px;
+    }
+    @include media (768px) {
+        width: 500px;
+    }
+    & p {margin-bottom: 24px;}
+}
+
+.order-imglist {
+    @media screen and (max-width:1439px) {
+        display: none;
+    }
+    position: absolute;
+
+    width: 672px;
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+
+    &__item {
+        filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+    }
+
+    &__pict-one {
+        border-radius: 0px 45px 45px 0px;
+        width: 203px;
+    }
+
+    &__pict-two {
+        border-radius: 37px 0px;
+        width: 203px;
+    }
+
+    &__pict-three {
+        border-radius: 0px 0px 50px 0px;
+        width: 203px;
     }
 }
 // ================================== FORM ===============================
@@ -135,21 +177,22 @@
             border-radius: 50px 0px;
         }
 
-        .textarea-link {
+        .textfield-cont {
             position: relative;
         }
         .textarea-link__icon {
             position: absolute;
+            bottom: 14%;
+            right: 8%;
+
             fill: #CDCDCD;
-            top: 22px;
-            left: 140px;
-            transform: translate(-50%, 800%);
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
             &:focus,
             &:hover {
                 fill: blue;
             }
+            @include media (768px) {right: 6%;}
         }
 
 
@@ -263,34 +306,5 @@
         display: flex;
         justify-content: space-between;
         margin-left: 0;
-    }
-}
-.order-imglist {
-    @media screen and (max-width:1439px) {
-        display: none;
-    }
-
-    display: flex;
-    gap: 32px;
-    margin-top: 60px;
-
-    &__item {
-        filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-        
-    }
-
-    &__pict-one {
-        border-radius: 0px 45px 45px 0px;
-        width: 203px;
-    }
-
-    &__pict-two {
-        border-radius: 37px 0px;
-        width: 203px;
-    }
-
-    &__pict-three {
-        border-radius: 0px 0px 50px 0px;
-        width: 203px;
     }
 }
