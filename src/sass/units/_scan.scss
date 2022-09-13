@@ -82,6 +82,7 @@
 
   background-image: url(.././images/scanning-hero-mob.png);
   background-repeat: no-repeat;
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -111,6 +112,7 @@
     height: 172px;
     margin-top: 0;
     z-index: 0;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -128,6 +130,7 @@
     width: 435px;
     height: 286px;
     margin: 0;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -281,10 +284,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
-
   background-image: url(.././images/scanning-process1-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,11 +297,16 @@
     background-image: url(.././images/scanning-process1-mob-2x.png);
   }
 
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process1-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -317,6 +321,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -337,10 +342,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
-
   background-image: url(.././images/scanning-process2-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -354,11 +355,16 @@
     background-image: url(.././images/scanning-process2-mob-2x.png);
   }
 
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process2-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -373,6 +379,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -393,9 +400,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
   background-image: url(.././images/scanning-process3-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,11 +413,16 @@
     background-image: url(.././images/scanning-process3-mob-2x.png);
   }
 
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process3-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -428,6 +437,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -448,9 +458,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
   background-image: url(.././images/scanning-process4-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -464,11 +471,16 @@
     background-image: url(.././images/scanning-process4-tab-2x.png);
   }
 
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process4-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -483,6 +495,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
