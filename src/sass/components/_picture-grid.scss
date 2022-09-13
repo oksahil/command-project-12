@@ -1,4 +1,7 @@
 .pictures-box {
+    @media screen and (max-width:1439px) {
+      display: none;  
+    }
     position: relative;
     display: flex;
     flex-wrap: wrap;
