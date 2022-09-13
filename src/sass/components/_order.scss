@@ -10,11 +10,7 @@
                 padding-left: 149px;
             }
          
-                         
-         }
-.order-br {
-    
-    
+         
     background-image: url(/src/images/cub-mob-1x.jpg);
         background-repeat: no-repeat;
         background-size: 280px 171px;
@@ -44,7 +40,9 @@
         @include retina {
             background-image: url(/src/images/cub-desk-2x.jpg);
             background-repeat: no-repeat;
-        }
+        }                
+         }
+.order-br {
 }
 
        
