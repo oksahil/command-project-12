@@ -1,15 +1,15 @@
 .order {
-        padding-top: 92px;
-        align-content: center;
+    padding-top: 92px;
+    align-content: center;
 
         @include media (768px) {
-                padding-top: 104px;
+            padding-top: 104px;
             }
         @include media (1440px) {
             padding-top: 188px;
-        }
-                     
-         }
+        }                   
+}
+
 .order-top {
     @include media (768px) {
         display: flex;
@@ -22,13 +22,17 @@
 }
 
 .order-top__back {
-    min-width: 280px;
-    min-height: 171px;
+    width: calc(100vw - 40px);
+    height: calc((100vw - 40px) * 0.61);
 
     background-image: url(/src/images/cub-mob-1x.jpg);
         background-repeat: no-repeat;
-        background-size: 280px 171px;
+        background-size: cover;
 
+    @include media (480px) {
+        width: 440px;
+        height: 268px;
+    }
     @include media (768px) {
         width: 336px;
         height: 158px;
@@ -68,10 +72,11 @@
     width: 100%;
     text-align: left;
 
+    @media screen and (max-width:1139px) {margin-top: 16px;}
     @include media (768px) {
         width: 336px;
     }
-    @include media (768px) {
+    @include media (1440px) {
         width: 500px;
     }
     & p {margin-bottom: 24px;}
@@ -131,7 +136,7 @@
 
     .form-field__label {
         position: relative;
-        
+
         &:hover .input--main, &:focus .input--main {outline-width: 0;}
         &:hover .form-field__label-text, &:focus .form-field__label-text {
             transform: translateY(-20px);
@@ -139,17 +144,29 @@
             font-size: 14px;
             line-height: calc(20 / 14);
         }
-        // &:not(:placeholder-shown) .form-field__label-text {
-        //     transform: translateY(-20px);
+    }
+    .form-field__input:not(:placeholder-shown) + .form-field__label-text {
+        transform: translateY(-20px);
 
-        //     font-size: 14px;
-        //     line-height: calc(20 / 14);
-        // }
-
+        font-size: 14px;
+        line-height: calc(20 / 14);
+    }
+    .form-field__input {
+        &:not(:focus):not(:placeholder-shown):valid {
+            background-color: rgba(106, 196, 173, 0.247);
+            border: 1px solid green;
+        }
+        
+        &:not(:focus):not(:placeholder-shown):invalid {
+            background-color: rgba(196, 106, 136, 0.247);
+            border: 1px solid red;
+        }
     }
     .form-field__label-text {
         position: absolute;
+        left: 0;
 
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     }
 
         .input--main {
@@ -164,6 +181,7 @@
                 padding-left: 22px;
 
                 color: #CDCDCD;
+                
             }
         }
 
