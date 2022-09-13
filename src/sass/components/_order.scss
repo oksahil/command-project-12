@@ -153,13 +153,15 @@
     }
     .form-field__input {
         &:not(:focus):not(:placeholder-shown):valid {
-            background-color: rgba(106, 196, 173, 0.247);
-            border: 1px solid green;
+            background-color: rgba(22, 243, 14, 0.247);
+            // border: 1px solid green;
+            border-radius: 3px;
         }
         
         &:not(:focus):not(:placeholder-shown):invalid {
-            background-color: rgba(196, 106, 136, 0.247);
-            border: 1px solid red;
+            background-color: rgba(219, 18, 28, 0.247);
+            // border: 1px solid red;
+            border-radius: 3px;
         }
     }
     .form-field__label-text {
