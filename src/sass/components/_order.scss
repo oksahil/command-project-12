@@ -1,21 +1,60 @@
 .order {
         padding-top: 92px;
-        
-            @include media (768px) {
+        align-content: center;
+        @include media (768px) {
                 padding-top: 104px;
             }
         
             @include media (1440px) {
                 padding-top: 188px;
+                padding-left: 149px;
             }
+         
+                         
+         }
+.order-br {
+    
+    
+    background-image: url(/src/images/cub-mob-1x.jpg);
+        background-repeat: no-repeat;
+        background-size: 280px 171px;
+    
+        @include retina {
+            background-image: url(/src/images/cub-mob-2x.jpg);
+        }
+    
+        @media screen and (min-width:768px) and (max-width:1439px) {
+            background-image: url(/src/images/cub-tab-1x.jpg);
+            background-repeat: no-repeat;
+            background-size: 336px 158px;
+        }
+    
+        @include retina {
+            background-image: url(/src/images/cub-tab-2x.jpg);
+            background-repeat: no-repeat;
+        }
+    
+    
+        @media screen and (min-width:1440px) {
+            background-image: url(/src/images/cub-desk-2x.jpg);
+            background-repeat: no-repeat;
+            background-size: 555px 400px;
+        }
+    
+        @include retina {
+            background-image: url(/src/images/cub-desk-2x.jpg);
+            background-repeat: no-repeat;
+        }
 }
 
+       
 .order-img {
     padding: 0 20px;
     margin-top: 16px;
 }
 
 .order-text {
+    
     font-weight: 300;
     font-size: 16px;
     line-height: calc(20px / 16px);
@@ -24,10 +63,40 @@
     text-align: left;
     margin-top: 16px;
 }
+.order-list {
+@media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        // gap: 32px;
+    }
+}
+.order-item {
+    @media screen and (min-width: 768px){
+    width: 336px;
+}
+}
 
+
+
+.title-center {
+    text-align: center;
+}
 .forms {
     margin-top: 41px;
     width: 100%;
+    // display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    @media screen and (min-width: 480px) {
+            // max-width: 400px;
+            align-content: center;
+        }
+    // @media screen and (min-width: 1440px) {
+    //         width: 555px;
+    //         margin-left: 0;
+    //     }
+
 }
 .order-form-choice {
     width: 100%;
@@ -39,10 +108,21 @@
     line-height: 1.25;
     color: var(--text-color);
 }
+    // .triangle {
+    // &::before {
+    //     content: '';
+    //         margin-right: 25px;
+    //         width: 25px;
+    //         height: 25px;
+    //         color: black;
+            
+            // background-image: url("/src/images/img-triangle.png");
+//         }
+// }
 
-.order-form {
-    display: block;
-}
+// .order-form {
+//     display: block;
+// }
 
 .order-form__name {
     margin-top: 28px;
@@ -50,6 +130,7 @@
 
 .order-form__field {
     margin-top: 44px;
+    
 }
 
 .order-form-name,
@@ -84,32 +165,17 @@
     resize: none;
     border: 1px solid var(--title-color);
     border-radius: 50px 0px;
-
-       
-            
-            padding-left: 20px;
-            padding-top: 22px;
-            padding-right: 20px;
-            padding-bottom: 22px;
-            
-        
-            &::placeholder {
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+    &::placeholder {
                 font-size: 12px;
                 line-height: calc(14 / 12);
                 letter-spacing: 0.01em;
                 color: rgba(117, 117, 117, 0.5);
             }
         }
-
-    // &__comment::placeholder {
-    //     font-weight: 400;
-    //     font-size: 16px;
-    //     line-height: 1.25;
-    //     color: #CDCDCD;
-    //     max-width: 260px;
-    //     height: 20px;
-    // }
-
 
 .order-form-note {
     margin-top: 4px;
@@ -149,5 +215,42 @@
     &:focus,
     &:hover {
         fill: blue;
+    }
+}
+.structure-list {
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+}
+.order-imglist {
+    @media screen and (max-width:1439px) {
+        display: none;
+    }
+
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+
+    &__item {
+        filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+        
+    }
+
+    &__pict-one {
+        border-radius: 0px 45px 45px 0px;
+        width: 203px;
+    }
+
+    &__pict-two {
+        border-radius: 37px 0px;
+        width: 203px;
+    }
+
+    &__pict-three {
+        border-radius: 0px 0px 50px 0px;
+        width: 203px;
     }
 }

@@ -1,52 +1,69 @@
 .hero {
-    position: relative;
-    padding-top: 98px;
-    // padding-bottom: 18px;
+    & .container {position: relative;}
+
+    padding-top: 92px;
+    padding-bottom: 40px;
     
     font-family: 'caviardreams';
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(19px / 16px);
+    line-height: calc(19 / 16);
     text-align: center;
 
     color: var(--text-color);
 
     @include media (768px) {
-        font-size: 18px;
-        line-height: calc(21px / 18px);
-        padding-top: 104px;
-        
-    }
-         @include media (1440px) {
-             font-size: 36px;
-             line-height: calc(42px / 36px);
-             padding-top: 188px;
-    
-         }
+        padding-top: 102px;
+        padding-bottom: 60px;
 
+        font-size: 18px;
+        line-height: calc(21 / 18);
+    }
+    @include media (1440px) {
+        padding-top: 140px;
+        padding-bottom: 120px;
+
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
 }
+    .rectangule {
+        position: absolute;
+        top: -92px;
+
+        width: 74px;
+        height: 74px;
+
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        background-color: #FFFFFF;
+
+        @include media (480px) {display: none;}
+    }
+    .rec--left {left: 0; border-radius: 0px 35px 35px 0px;}
+    .rec--right {right: 0; border-radius: 35px 0px 0px 35px;}
 
 .hero__title {
-    // width: 280px;
+    width: 280px;
     margin: auto;
 
     font-family: 'caviardreams';
     font-weight: 400;
     font-size: 18px;
-    line-height: calc(21px / 18px);
+    line-height: calc(21 / 18);
 
     @include media (768px) {
-        // width: 336px;
+        width: 336px;
 
         font-size: 24px;
-        line-height: calc(28px / 24px);
+        line-height: calc(28 / 24);
     }
-         @include media (1440px) {
-            //  width: 336px;
-    
-             font-size: 48px;
-             line-height: calc(56px/ 48px);
-         }
+    @include media (1440px) {
+        width: 630px;
+
+        font-size: 48px;
+        line-height: calc(56 / 48);
+        text-align: center;
+    }
 }
 
 .hero-fonpict__anchor {
@@ -59,16 +76,26 @@
     }
 
     position: absolute;
-    left: 135px;
-    bottom: 70px;
+    left: 134px;
+    bottom: 72px;
 
     fill: #008CEF;
+
+    @include media (1440px) {
+        left: 230px;
+        bottom: 9px;
+
+        height: 32px;
+        width: 32px;
+    }
 }
 
 .hero-fonpict__pict {
     width: 74px;
     display: block;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+    @include media (1440px) {width: 144px;}
 }
 
 .pict--one {
@@ -77,10 +104,14 @@
     }
 
     position: absolute;
-    top: 0;
+    top: -30px;
     left: 105px;
 
     border-radius: 50%;
+    @include media (1440px) {
+        top: 0;
+        left: 174px;
+    }
 }
 
 .pict--two {
@@ -89,10 +120,14 @@
     }
 
     position: absolute;
-    top: 8px;
+    top: -26px;
     right: 32px;
 
     border-radius: 0px 0px 72px 0px;
+    @include media (1440px) {
+        top: 5px;
+
+    }
 }
 
 .pict--three {
@@ -101,10 +136,14 @@
     }
 
     position: absolute;
-    top: 288px;
+    bottom: -18px;
     left: 32px;
 
     border-radius: 50%;
+    @include media (1440px) {
+        bottom: -120px;
+        left: 30px;
+    }
 }
 
 .pict--four {
@@ -116,8 +155,11 @@
     top: 226px;
     right: 32px;
 
-    display: block;
     border-radius: 72px 72px 0px 0px;
+    @include media (1440px) {
+        top: 437px;
+
+    }
 }
 
 .hero-imglist {
@@ -136,10 +178,14 @@
         margin-top: 60px;
         margin-bottom: 60px;
     }
+    @include media (1440px) {
+        gap: 31px;
+    }
 
     &__pict-one {
         display: block;
         border-radius: 0px 35px 0px 0px;
+        @include media (1440px) {border-radius: 0px 72px 0px 0px;}
     }
 
     &__pict-two {
@@ -150,12 +196,14 @@
     &__pict-three {
         display: block;
         border-radius: 0px 25px;
+        @include media (1440px) {border-radius: 0px 72px;}
     }
 }
 
 .hero-imglist__item {
     width: 100%;
     @include media (768px) {width: 114px;}
+    @include media (1440px) {width: 203px;}
 
     & img {
         filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));

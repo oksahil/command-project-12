@@ -32,12 +32,13 @@
 body {
   font-family: 'CeraPro', sans-serif;
   background-color: var(--bg-color-main);
-
-  
+  margin-left: auto;
+  margin-right: auto;
+    padding-top: 85px;
     background-image: url(/src/images/bg-mob.jpg);
     background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: top;
+  background-position-y: 295px;
   background-size: contain;
  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -47,6 +48,7 @@ body {
   }
 
   @media screen and (min-width: 768px) {
+    background-position-y: top;
     background-image: url(/src/images/bg-tab.jpg);
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -55,8 +57,9 @@ body {
     url(/src/images/bg-tab-2x.jpg);
   }
   @media screen and (min-width: 1440px) {
+     background-position-y: top;
     background-image: url(/src/images/bg.jpg);
-    max-width: 1562px;
+    
      @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
