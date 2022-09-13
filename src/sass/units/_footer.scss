@@ -62,6 +62,7 @@
 
     @media screen and (min-width: 1440px) {
       justify-content: flex-start;
+      padding-right: 32px;
     }
   }
 
@@ -69,7 +70,6 @@
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
-      margin-left: 32px;
     }
     @media screen and (min-width: 1440px) {
       margin-left: 0;
@@ -79,7 +79,7 @@
   &__flex {
     @media screen and (min-width: 1440px) {
       display: flex;
-      margin-left: 32px;
+      justify-content: flex-start;
     }
   }
 
@@ -102,6 +102,14 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer__email,
 .footer__tel {
