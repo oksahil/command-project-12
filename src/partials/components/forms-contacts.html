@@ -1,36 +1,43 @@
 <section class="forms">
     <div class="container-form">
-        <h3 class="title-section">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
-        <form class="order-form">
-            <div class="order-form__field">
-                <label>
-                    <input type="text" name="name" placeholder="Ім’я" class="order-form-name" />
+        <h3 class="title-section title-center">Зв'яжіться з нами</h3>
+
+        <form class="form">
+
+            <div class="form-field">
+                <label class="form-field__label">
+                    <input type="text" name="name" placeholder=" " class="form-field__input input--main" />
+                    <span class="form-field__label-text">Ім'я</span>
                 </label>
             </div>
-            <div class="order-form__field">
-                <label>
-                    <input type="email" name="email" placeholder="Email" class="order-form-email" />
+
+            <div class="form-field">
+                <label class="form-field__label">
+                    <input type="email" name="email" placeholder=" " class="form-field__input input--main" />
+                    <span class="form-field__label-text">Email</span>
                 </label>
             </div>
 
-            <div class="order-form__field">
-                <label class="order-form__comment-title">
-                    Повідомлення</label>
+            <div class="form-field textarea-cont">
 
-                <div class="form-svg-add">
+                <label class="form-field__comment-title">Повідомлення</label>
 
-                    <svg class="svg-add" width="22" height="20">
-                        <use href="/src/images/icons.svg#icon-paper-clip"></use>
-                    </svg>
+                <div class="textfield-cont">
+                    <a href="/src/doc/present.pdf" download class="textarea-link">
+                        <svg class="textarea-link__icon" width="22" height="20">
+                            <use href="/src/images/icons.svg#icon-paper-clip"></use>
+                        </svg>
+                    </a>
+
+                    <textarea class="form-field__comment input--main" id="comment"
+                        placeholder="Залишіть своє повідомлення"></textarea>
                 </div>
 
-                <textarea class="order-form__comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
-
+                <p class="form__note">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
             </div>
         </form>
-        <p class="order-form-note">
-            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-        </p>
-        <button type="button" class="btn-send btn">ВІДПРАВИТИ</button>
+
+        <button type="button" class="btn-send btn">Відправити</button>
+
     </div>
 </section>
