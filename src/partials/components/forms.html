@@ -1,20 +1,24 @@
 <section class="forms">
     <div class="container-form">
-        <h3 class="title-section title-center">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
-        <form class="order-form">
-            <div class="order-form__field">
-                <label>
-                    <input type="text" name="name" placeholder="Ім’я" class="order-form-name" />
+        <h3 class="title-section title-center">Зв'яжіться з нами</h3>
+
+        <form class="form">
+
+            <div class="form-field">
+                <label class="form-field__label"><span class="form-field__label-text">Ім'я</span>
+                    <input type="text" name="name" placeholder="XXX" class="form-field__name input--main" />
                 </label>
             </div>
-            <div class="order-form__field">
-                <label>
-                    <input type="email" name="email" placeholder="Email" class="order-form-email" />
+
+            <div class="form-field">
+                <label class="form-field__label"><span class="form-field__label-text">Email</span>
+                    <input type="email" name="email" placeholder="XXX" class="form-field__email input--main" />
                 </label>
             </div>
-            <div class="order-form__field">
+
+            <div class="form-field">
                 <label>
-                    <select name="view" id="view" class="order-form-choice">
+                    <select name="view" id="view" class="form-field__choice input--main">
                         <option class="triangle" value="">Види пластика</option>
                         <option value="">1</option>
                         <option value="">2</option>
@@ -22,9 +26,10 @@
                     </select>
                 </label>
             </div>
-            <div class="order-form__field">
+
+            <div class="form-field">
                 <label>
-                    <select name="quality" id="quality" class="order-form-choice">
+                    <select name="quality" id="quality" class="form-field__choice input--main">
                         <option value="">Якість друку</option>
                         <option value="">1</option>
                         <option value="">2</option>
@@ -32,9 +37,10 @@
                     </select>
                 </label>
             </div>
-            <div class="order-form__field">
+
+            <div class="form-field">
                 <label>
-                    <select name="color" id="color" class="order-form-choice">
+                    <select name="color" id="color" class="form-field__choice input--main">
                         <option value="">Колір</option>
                         <option value="">1</option>
                         <option value="">2</option>
@@ -43,27 +49,24 @@
 
                 </label>
             </div>
-            <div class="order-form__field">
-                <label class="order-form__comment-title">
-                    Повідомлення</label>
 
-                
-                    <a href="/src/doc/present.pdf" download>
-                        <div class="form-svg-add">
-                    <svg class="svg-add" width="22" height="20">
+            <div class="form-field textarea-cont">
+
+                <label class="form-field__comment-title">Повідомлення</label>
+
+                <a href="/src/doc/present.pdf" download class="textarea-link">
+                    <svg class="textarea-link__icon" width="22" height="20">
                         <use href="/src/images/icons.svg#icon-paper-clip"></use>
                     </svg>
-                    </div>
-                    </a>
-                
+                </a>
+                <textarea class="form-field__comment input--main" id="comment"
+                    placeholder="Залишіть своє повідомлення"></textarea>
 
-                <textarea class="order-form__comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
-
+                <p class="form__note">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
             </div>
         </form>
-        <p class="order-form-note">
-            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-        </p>
-        <button type="button" class="btn-send btn">ВІДПРАВИТИ</button>
+
+        <button type="button" class="btn-send btn">Відправити</button>
+
     </div>
 </section>
