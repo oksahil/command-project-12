@@ -1,90 +1,194 @@
-<div class="container">
-  <div class="modeling">
-    <h1 class="title-page">3D МОДЕЛЮВАННЯ</h1>
-    <p class="modeling__p">
-      Сфера 3D графіки може надати широкий спектр послуг. Але якщо спроектована
-      модель буде створюватися шляхом 3D друку, обробки заготовки на ЧПУ станках
-      або іншими виробничими методами, то до моделі преставляеться ряд
-      інженерних вимог які повинен враховувати дизайнер при розробці моделі.
-    </p>
-    <p class="modeling__p-second">
-      Наші фахівці допоможуть вам визначитися з технічною стороною вироба і
-      підготують модель для її створення. Ми маємо широкий спектр інструментів
-      для вдоволення будь-якої вашої задачі.
-    </p>
-    <h2 class="title-section">Способи створення моделі:</h2>
-    <div class="modeling__methods">
-    <ul class="modeling__ul">
-      <li class="modeling__li">3D сканування</li>
-      <li class="modeling__li">На основі фотографій з доданими розмірами</li>
-      <li class="modeling__li">За ескізами з розмірами</li>
-      <li class="modeling__li">За вашим кресленням</li>
-      <li class="modeling__li">
-        По вже існуючому прототипу шляхом зняття розмірів
-      </li>
-    </ul>
-    <div class="modeling__npg-photo"></div>
+<section class="modeling">
+  <div class="container">
+    <h2 class="title-page">3D МОДЕЛЮВАННЯ</h2>
+    <div class="modelling__wrapper">
+      <p class="modeling-p">
+        Сфера 3D графіки може надати широкий спектр послуг. Але якщо
+        спроектована модель буде створюватися шляхом 3D друку, обробки заготовки
+        на ЧПУ станках або іншими виробничими методами, то до моделі
+        преставляеться ряд інженерних вимог які повинен враховувати дизайнер при
+        розробці моделі.
+      </p>
+      <p class="modeling-p">
+        Наші фахівці допоможуть вам визначитися з технічною стороною вироба і
+        підготують модель для її створення. Ми маємо широкий спектр інструментів
+        для вдоволення будь-якої вашої задачі.
+      </p>
     </div>
-    <h3 class="title-section">
+
+    <div class="made-modeling">
+      <div class="made-modeling__content">
+        <h3 class="title-section">Способи створення моделі:</h3>
+        <ul class="made-modeling__list">
+          <li class="made-modeling__item">
+            <div class="modeling__marker"></div>
+            3D сканування
+          </li>
+          <li class="made-modeling__item">
+            <div class="modeling__marker"></div>
+            На основі фотографій з доданими розмірами
+          </li>
+          <li class="made-modeling__item">
+            <div class="modeling__marker"></div>
+            За ескізами з розмірами
+          </li>
+          <li class="made-modeling__item">
+            <div class="modeling__marker"></div>
+            За вашим кресленням
+          </li>
+          <li class="made-modeling__item">
+            <div class="modeling__marker"></div>
+            По вже існуючому прототипу шляхом зняття розмірів
+          </li>
+        </ul>
+      </div>
+      
+      <div class="made-modeling__photo"></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="create-model">
+  <div class="container">
+    <h3 class="create-model__title">
       МИ СТВОРЮЄМО ФОТОРЕАЛІСТИЧНІ ЗОБРАЖЕННЯ МОДЕЛЕЙ
     </h3>
     <div class="modeling__pictures">
-      <picture>
+      <picture class="picture__item">
         <source
           srcset="
-            ./images/modeling-mob-1x-1.jpg 1x,
-            ./images/modeling-mob-2x-1.jpg 2x
+            /src/images/modeling-real1-desk.png    1x,
+            /src/images/modeling-real1-desk-2x.png 2x
           "
-          media="( max-width: 480px)"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real1-tab.png    1x,
+            /src/images/modeling-real1-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real1-mob.png   1x,
+            /src/images/modeling-rea1-mob-2x.png 2x
+          "
+          media="(max-width: 767px)"
         />
         <img
-          class="modeling__photo"
-          src="./images/modeling-mob-2x-1.jpg"
-          alt="макет деталі 1"
+          class="card-list__image"
+          src="/src/images/modeling-real1-mob.png"
+          alt="Изображение детали"
+          width="200px"
         />
       </picture>
-      <picture>
+
+      <picture class="picture__item">
         <source
           srcset="
-            ./images/modeling-mob-1x-2.jpg 1x,
-            ./images/modeling-mob-2x-2.jpg 2x
+            /src/images/modeling-real2-desk.png    1x,
+            /src/images/modeling-real2-desk-2x.png 2x
           "
-          media="( max-width: 480px)"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real2-tab.png    1x,
+            /src/images/modeling-real2-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real2-mob.png    1x,
+            /src/images/modeling-real2-mob-2x.png 2x
+          "
+          media="(max-width: 480px)"
         />
         <img
-          class="modeling__photo"
-          src="./images/modeling-mob-2x-2.jpg"
-          alt="макет деталі 2"
+          class="card-list__image"
+          src="/src/images/modeling-real2-mob.png"
+          alt="Изображение детали"
+          width="130px"
+          height="118px"
         />
       </picture>
-      <picture>
+
+      <picture class="picture__item">
         <source
           srcset="
-            ./images/modeling-mob-1x-3.jpg 1x,
-            ./images/modeling-mob-2x-3.jpg 2x
+            /src/images/modeling-real3-desk.png    1x,
+            /src/images/modeling-real3-desk-2x.png 2x
           "
-          media="( max-width: 480px)"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real3-tab.png    1x,
+            /src/images/modeling-real3-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real3-mob.png    1x,
+            /src/images/modeling-real3-mob-2x.png 2x
+          "
+          media="(max-width: 480px)"
         />
         <img
-          class="modeling__photo"
-          src="./images/modeling-mob-2x-3.jpg"
-          alt="макет деталі 3"
+          class="card-list__image"
+          src="/src/images/modeling-real3-mob.png"
+          alt="Изображение детали"
+          width="130px"
+          height="118px"
         />
       </picture>
-      <picture>
+
+      <picture class="picture__item">
         <source
           srcset="
-            ./images/modeling-mob-1x-4.jpg 1x,
-            ./images/modeling-mob-2x-4.jpg 2x
+            /src/images/modeling-real4-desk.png    1x,
+            /src/images/modeling-real4-desk-2x.png 2x
           "
-          media="( max-width: 480px)"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real4-tab.png    1x,
+            /src/images/modeling-real4-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/modeling-real4-mob.png    1x,
+            /src/images/modeling-real4-mob-2x.png 2x
+          "
+          media="(max-width: 480px)"
         />
         <img
-          class="modeling__photo"
-          src="./images/modeling-mob-2x-4.jpg"
-          alt="макет деталі 4"
+          class="card-list__image"
+          src="/src/images/modeling-real4-mob.png"
+          alt="Изображение детали"
+          width="130px"
+          height="118px"
         />
       </picture>
     </div>
   </div>
-</div>
+</section>
+
+<section class="modeling-btn">
+  <div class="container">
+    <h3 class="visually-hidden">Заголовок</h3>
+    <button type="button" class="btn">
+      <span class="modeling-btn__text">ЗРОБИТИ ЗАМОВЛЕННЯ</span>
+
+      <a href="#Order Form Button"></a>
+    </button>
+  </div>
+  </div>
+</section>
