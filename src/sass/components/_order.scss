@@ -7,7 +7,7 @@
         
             @include media (1440px) {
                 padding-top: 188px;
-                padding-left: 149px;
+                // padding-left: 149px;
             }
          
                          
@@ -73,7 +73,9 @@
 }
 .order-item {
     @media screen and (min-width: 768px){
-    width: 336px;
+    width: 555px;
+    height: 400px;
+    gap: 32px;
 }
 }
 
