@@ -32,15 +32,8 @@
 
 
   }
-.title-contacts {
-  position: relative;
-}
-.img-bg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transition: (-50%, -50%);
-}
+
+
 .contacts-list {
     @media screen and (min-width: 768px) {
         display: flex;
