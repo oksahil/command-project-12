@@ -97,7 +97,6 @@
 
     @include media (1440px) {width: 144px;}
 }
-
 .pict--one {
     @media screen and (max-width:767px) {
         display: none;
@@ -113,7 +112,6 @@
         left: 174px;
     }
 }
-
 .pict--two {
     @media screen and (max-width:767px) {
         display: none;
@@ -129,7 +127,6 @@
 
     }
 }
-
 .pict--three {
     @media screen and (max-width:767px) {
         display: none;
@@ -145,20 +142,33 @@
         left: 30px;
     }
 }
-
 .pict--four {
     @media screen and (max-width:767px) {
         display: none;
     }
 
     position: absolute;
-    top: 226px;
+    bottom: 43px;
     right: 32px;
 
     border-radius: 72px 72px 0px 0px;
     @include media (1440px) {
-        top: 437px;
+        bottom: -49px;
+    }
+}
+.pict--five {
+    @media screen and (max-width:1439px) {
+        display: none;
+    }
 
+    position: absolute;
+    bottom: 43px;
+
+
+    border-radius: 72px;
+    @include media (1440px) {
+        right: 32px;
+        bottom: -888px;
     }
 }
 
