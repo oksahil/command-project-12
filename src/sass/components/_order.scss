@@ -211,7 +211,7 @@
 }
 
 .btn-send {
-    padding-right: 20px;
+    // padding-right: 20px;
     margin-top: 35px;
     width: 280px;
     // margin-bottom: 60px;
@@ -219,6 +219,8 @@
     // margin-right: auto;
     display: block;
     align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .form-svg-add {
