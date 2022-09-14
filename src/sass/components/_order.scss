@@ -7,7 +7,7 @@
         
             @include media (1440px) {
                 padding-top: 188px;
-                // padding-left: 149px;
+                
             }
          
                          
@@ -98,7 +98,10 @@
 
 
 .title-center {
-    text-align: center;
+    @media screen and (min-width: 768px) and (max-width: 1439px){
+            text-align: center;
+        }
+    
 }
 .forms {
     // margin-top: 41px;
@@ -206,8 +209,11 @@
     color: #CDCDCD;
     // width: 280px;
     width: 100%;
-    height: 80px;
+    // height: 80px;
     text-align: left;
+    @media screen and (min-width: 768px){
+        height: 80px;
+    }
 }
 .forms-pic-cont {
     padding-top: 40px;
@@ -221,7 +227,7 @@ padding-bottom: 80px;
 }
 .btn-send {
     // padding-right: 20px;
-    margin-top: 35px;
+    margin-top: 40px;
     width: 280px;
     // margin-bottom: 60px;
     // margin-left: auto;
