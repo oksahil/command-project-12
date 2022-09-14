@@ -12,8 +12,13 @@
          
                          
          }
+
+ .order-form:not(:first-child) {
+     margin-top: 44px;
+ }
 .order-form {
-                @include media (1440px) {
+    padding-top: 20px;
+   @include media (1440px) {
                       width: 555px;
                     }
 
@@ -157,10 +162,10 @@
     margin-top: 28px;
 }
 
-.order-form__field {
-    margin-top: 44px;
+// .order-form__field {
+//     margin-top: 44px;
     
-}
+// }
 
 .order-form-name,
 .order-form-email {
