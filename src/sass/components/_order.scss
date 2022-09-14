@@ -98,9 +98,9 @@
                    }
 
 }
-.order-bg {
-    width: 80%;
-}
+// .order-bg {
+//     width: 80%;
+// }
 .order-form-choice {
     width: 100%;
     height: 24px;
@@ -229,9 +229,10 @@
     }
 }
 .order-imglist {
+    width: 100%;
     @media screen and (max-width:1439px) {
         display: none;
-        width: 100%;
+        
     }
 
     display: flex;
