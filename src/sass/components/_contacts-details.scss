@@ -18,7 +18,19 @@
             gap: 60px;
 }
 }
+
 .details-list {
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+}
+
+.details-list-order {
     width: 100%;
     @media screen and (min-width: 768px) and (max-width: 1439px) {
             display: flex;
@@ -31,6 +43,7 @@
     
          }
 }
+
 .contacts-details__title {
 
     font-weight: 700;
