@@ -13,9 +13,9 @@
                          
          }
 
- .order-form:not(:first-child) {
-     margin-top: 44px;
- }
+//  .order-form:not(:first-child) {
+//      margin-top: 44px;
+//  }
 .order-form {
     padding-top: 20px;
    @include media (1440px) {
@@ -162,10 +162,10 @@
     margin-top: 28px;
 }
 
-// .order-form__field {
-//     margin-top: 44px;
+.order-form__field {
+    margin-top: 44px;
     
-// }
+}
 
 .order-form-name,
 .order-form-email {
