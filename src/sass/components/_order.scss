@@ -50,7 +50,11 @@
 //             background-repeat: no-repeat;
 //         }
 // }
-
+.position-btn {
+    padding-top: 40px;
+    width: 100%;
+    margin-left: auto;
+}
        
 .order-img {
     padding: 0 20px;
@@ -103,7 +107,7 @@
         }
     
 }
-.forms {
+.forms-send {
     // margin-top: 41px;
     width: 100%;
    
@@ -217,13 +221,13 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-padding-top: 100px;
-padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 80px;
         }
 }
 .btn-send {
     // padding-right: 20px;
-    margin-top: 40px;
+    // margin-top: 40px;
     width: 280px;
     // margin-bottom: 60px;
     // margin-left: auto;
