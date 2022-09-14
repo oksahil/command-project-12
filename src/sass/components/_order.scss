@@ -12,6 +12,12 @@
          
                          
          }
+.order-form {
+                @include media (1440px) {
+                      width: 555px;
+                    }
+
+}
 // .order-br {    
 //     background-image: url(/src/images/cub-mob-1x.jpg);
 //         background-repeat: no-repeat;
