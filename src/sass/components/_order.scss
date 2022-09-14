@@ -302,3 +302,20 @@
         width: 203px;
     }
 }
+
+.iframe {
+  width: 100%;
+  height: 171px;
+  border-radius: 15px;
+
+  @include tablet {
+    width: 336px;
+    height: 261px;
+    margin-right: 24px;
+  }
+
+  @include desktop {
+    width: 555px;
+    height: 315px;
+  }
+}
