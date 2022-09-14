@@ -1,19 +1,51 @@
 <section class="contacts">
-    <div class="container">
-        <h2 class="title-page title-contacts">КОНТАКТИ</h2>
-        <ul class="contacts-list">
-            <li class="contacts-item img-bg"></li>
-        <li class="contacts-item"><p class="order-text">
-            Людина уперше побачивши процес 3D друку може легко захопитися спостереженням за цим процесом не на десяток хвилин.</p>
+  <div class="container">
+    <h2 class="title-page title-contacts">КОНТАКТИ</h2>
+    <div class="contacts-list">
+      <div class="cont-item img-bg">
+        <picture>
+                    <source
+                      srcset="
+                        /src/images/video.jpg    1x,
+                        /src/images/video-2x.jpg 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        /src/images/video-tab.jpg    1x,
+                        /src/images/video-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        /src/images/video-mob.jpg    1x,
+                        /src/images/video-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img class="bg-vid" src="/src/images/video.jpg" alt="Відео 3Д куба">
+                  </picture>
+        
+      </div>
+      <div class="cont-item text">
+        <p class="order-text">
+          Людина уперше побачивши процес 3D друку може легко захопитися
+          спостереженням за цим процесом не на десяток хвилин.
+        </p>
         <p class="order-text">
           Наша команда створює timelapse відео що б ви могли краще ознайомитися
           з технологією 3D друку і просто помилуватися красою цього процесу.
         </p>
         <p class="order-text smile">
           Приємного перегляду!
-          <span><img class="emoji" src="/src/images/emoji.png" alt="smile"></span>
+          <span
+            ><img class="emoji" src="/src/images/emoji.png" alt="smile"
+          /></span>
         </p>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </section>

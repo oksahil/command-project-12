@@ -8,28 +8,11 @@
   @include media(1440px) {
     padding-top: 188px;
   }
+
+  & .title-page {
+    text-transform: uppercase;
+  }
 }
-
-// .scanning__title {
-//   font-style: 400;
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: 30px;
-//   color: #487996;
-
-//   margin-bottom: 16px;
-
-//   @media screen and (min-width: 768px) {
-//     font-size: 36px;
-//     line-height: 45px;
-//   }
-
-//   @media screen and (min-width: 1440px) {
-//     font-size: 48px;
-//     line-height: 60px;
-//     margin-bottom: 24px;
-//   }
-// }
 
 .scanning__wrapper {
   @media screen and (min-width: 768px) {
@@ -39,6 +22,12 @@
   @media screen and (min-width: 1440px) {
     display: inline-flex;
     width: 100%;
+  }
+}
+
+.item-one {
+  @media screen and (min-width: 1440px) {
+    padding-right: 72px;
   }
 }
 
@@ -74,7 +63,6 @@
   margin-top: 16px;
   @media screen and (min-width: 1440px) {
     margin-top: 24px;
-    margin-right: 72px;
   }
 }
 
@@ -99,6 +87,19 @@
 .scanning__image {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+
+  background-image: url(.././images/scanning-hero-mob.png);
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(.././images/scanning-hero-mob-2x.png);
+    background-size: auto;
+    background-size: contain;
+  }
 
   @media screen and (max-width: 320px) {
     height: 199px;
@@ -111,24 +112,6 @@
     min-height: 199px;
   }
 
-  // width: 100%;
-  // height: 68vw;
-  // max-height: 320px;
-  // min-height: 199px;
-  // height: 300px;
-  // aspect-ratio: 1 / 1;
-  background-image: url(.././images/scanning-hero-mob.png);
-  background-repeat: no-repeat;
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(.././images/scanning-hero-mob-2x.png);
-    background-size: auto;
-    background-size: contain;
-  }
-  margin-top: 20px;
-
   @media screen and (min-width: 768px) {
     position: absolute;
     bottom: 39px;
@@ -138,6 +121,7 @@
     height: 172px;
     margin-top: 0;
     z-index: 0;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -155,6 +139,7 @@
     width: 435px;
     height: 286px;
     margin: 0;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -167,15 +152,22 @@
 
 // <!-- Scan Process -->
 
-.scan-process > .container {
+.scan-process {
   padding-top: 40px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 22px;
+  }
+}
+
+.scan-process > .container {
   @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding-top: 22px;
     width: 1440px;
   }
 }
@@ -212,7 +204,6 @@
   margin-right: auto;
   width: 100%;
   height: auto;
-  // height: 380px;
 
   @media screen and (min-width: 768px) {
     width: 704px;
@@ -240,9 +231,6 @@
 .scan-process__item {
   position: relative;
   width: calc(50% - 10px);
-  // height: 50vw;
-  // height: 182px;
-  // max-height: 240px;
   min-height: 182px;
 
   background: #ffffff;
@@ -252,7 +240,6 @@
 
   @media screen and (min-width: 300px) and (max-width: 767px) {
     height: 50vw;
-    // height: 182px;
     max-height: 240px;
   }
 
@@ -313,10 +300,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
-
   background-image: url(.././images/scanning-process1-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,11 +313,16 @@
     background-image: url(.././images/scanning-process1-mob-2x.png);
   }
 
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(.././images/scanning-process1-tab.png);
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -349,6 +337,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -369,10 +358,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
-
   background-image: url(.././images/scanning-process2-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,7 +369,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(.././images/scanning-process2-mob-2x.png);
-    // background-size: 91px;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
   }
 
   @media screen and (min-width: 768px) {
@@ -392,6 +380,7 @@
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -406,6 +395,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -426,9 +416,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
   background-image: url(.././images/scanning-process3-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -440,7 +427,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(.././images/scanning-process3-mob-2x.png);
-    // background-size: 91px;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
   }
 
   @media screen and (min-width: 768px) {
@@ -448,6 +438,7 @@
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -462,6 +453,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -482,9 +474,6 @@
   width: 70%;
   height: 45%;
 
-  @media screen and (min-width: 480px) {
-    background-size: 120px;
-  }
   background-image: url(.././images/scanning-process4-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -496,7 +485,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(.././images/scanning-process4-tab-2x.png);
-    // background-size: 91px;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-size: 120px;
   }
 
   @media screen and (min-width: 768px) {
@@ -504,6 +496,7 @@
     width: 108px;
     height: 94px;
     top: 17px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -518,6 +511,7 @@
     width: 240px;
     height: 209px;
     top: 67px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -530,63 +524,31 @@
 
 // <!-- scan-button -->
 
-.scan-btn .container {
-  padding-top: 40px;
-  padding-bottom: 60px;
+.scan-btn {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-top: 80px;
   }
 }
 
-.scan-btn__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 0;
-
-  width: 280px;
-  height: 56px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30.5px;
-  border: none;
-}
-
 .scan-btn__text {
+  display: flex;
   font-style: 400;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
   color: #487996;
 }
-
-// .scan-btn::before {
-//   content: '';
-//   z-index: -1;
-//   position: absolute;
-//   width: 73.65px;
-//   height: 73.65px;
-//   top: 25px;
-//   right: 0px;
-//   background: #ffffff;
-
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 25px 0px;
-// }

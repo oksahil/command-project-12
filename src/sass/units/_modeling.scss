@@ -1,279 +1,189 @@
-.modeling {
-  max-width: 100%;
-  // width: 280px;
-  padding-top: 92px;
+<section class="modeling">
+  <div class="container">
+    <h2 class="title-page">3D моделювання</h2>
+    <div class="modelling__wrapper">
+      <p class="modeling-p">
+        Сфера 3D графіки може надати широкий спектр послуг. Але якщо
+        спроектована модель буде створюватися шляхом 3D друку, обробки заготовки
+        на ЧПУ станках або іншими виробничими методами, то до моделі
+        преставляеться ряд інженерних вимог які повинен враховувати дизайнер при
+        розробці моделі.
+      </p>
+      <p class="modeling-p">
+        Наші фахівці допоможуть вам визначитися з технічною стороною вироба і
+        підготують модель для її створення. Ми маємо широкий спектр інструментів
+        для вдоволення будь-якої вашої задачі.
+      </p>
+    </div>
+  </div>
+</section>
 
-  @include media(768px) {
-    padding-top: 104px;
-  }
+<section class="made-modeling">
+  <div class="container">
+    <div class="made-modeling__wrapper">
+      <div class="made-modeling__content">
+        <h3 class="title-section">Способи створення моделі:</h3>
+        <ul class="made-modeling__list">
+          <li class="made-modeling__item">3D сканування</li>
+          <li class="made-modeling__item">
+            На основі фотографій з доданими розмірами
+          </li>
+          <li class="made-modeling__item">За ескізами з розмірами</li>
+          <li class="made-modeling__item">За вашим кресленням</li>
+          <li class="made-modeling__item">
+            По вже існуючому прототипу шляхом зняття розмірів
+          </li>
+        </ul>
+      </div>
 
-  @include media(1440px) {
-    padding-top: 188px;
-  }
+      <div class="made-modeling__photo"></div>
+    </div>
+  </div>
+</section>
 
-  & .title-page {
-    text-transform: uppercase;
-  }
-}
+<section class="create-model">
+  <div class="container">
+    <h3 class="create-model__title">
+      Ми створюємо фоторефлшстичні зображення моделей
+    </h3>
 
-.modelling__wrapper {
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    width: 100%;
-  }
-}
+    <ul class="modeling__pictures">
+      <li class="picture__item">
+        <picture>
+          <source
+            srcset="
+              ./images/modeling-real1-desk.png    1x,
+              ./images/modeling-real1-desk-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real1-tab.png    1x,
+              ./images/modeling-real1-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real1-mob.png   1x,
+              ./images/modeling-rea1-mob-2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="modeling__image"
+            src="./images/modeling-real1-mob.png"
+            alt="Приклад створення зображення моделі - хомут"
+            width="200px"
+          />
+        </picture>
+      </li>
 
-.modeling-p {
-  font-style: 400;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2b2b2b;
+      <li class="picture__item">
+        <picture>
+          <source
+            srcset="
+              ./images/modeling-real2-desk.png    1x,
+              ./images/modeling-real2-desk-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real2-tab.png    1x,
+              ./images/modeling-real2-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real2-mob.png    1x,
+              ./images/modeling-real2-mob-2x.png 2x
+            "
+            media="(max-width: 480px)"
+          />
+          <img
+            class="modeling__image"
+            src="./images/modeling-real2-mob.png"
+            alt="Приклад створення зображення моделі - штангенциркуль"
+            width="130px"
+            height="118px"
+          />
+        </picture>
+      </li>
 
-  @media screen and (min-width: 768px) {
-    width: 515px;
-  }
+      <li class="picture__item">
+        <picture>
+          <source
+            srcset="
+              ./images/modeling-real3-desk.png    1x,
+              ./images/modeling-real3-desk-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real3-tab.png    1x,
+              ./images/modeling-real3-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real3-mob.png    1x,
+              ./images/modeling-real3-mob-2x.png 2x
+            "
+            media="(max-width: 480px)"
+          />
+          <img
+            class="modeling__image"
+            src="./images/modeling-real3-mob.png"
+            alt="Приклад створення зображення моделі - плата"
+            width="130px"
+            height="118px"
+          />
+        </picture>
+      </li>
 
-  @media screen and (min-width: 1440px) {
-    font-style: 400;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
+      <li class="picture__item">
+        <picture>
+          <source
+            srcset="
+              ./images/modeling-real4-desk.png    1x,
+              ./images/modeling-real4-desk-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real4-tab.png    1x,
+              ./images/modeling-real4-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/modeling-real4-mob.png    1x,
+              ./images/modeling-real4-mob-2x.png 2x
+            "
+            media="(max-width: 480px)"
+          />
+          <img
+            class="modeling__image"
+            src="./images/modeling-real4-mob.png"
+            alt="Приклад створення зображення моделі - двигун"
+            width="130px"
+            height="118px"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
 
-    width: 515px;
-  }
-}
-
-.modeling-p + .modeling-p {
-  margin-top: 16px;
-  @media screen and (min-width: 1440px) {
-    margin-top: 0;
-    margin-left: 72px;
-  }
-}
-
-// <---- made-modeling ---->
-
-.made-modeling {
-  padding-top: 40px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 41px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding-top: 40px;
-  }
-}
-
-.made-modeling__wrapper {
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-}
-
-.made-modeling__content .title-section {
-  margin-bottom: 0;
-
-  @media screen and (min-width: 1440px) {
-    margin-top: 60px;
-  }
-}
-
-.made-modeling__list {
-  margin-top: 16px;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1440px) {
-    margin-top: 24px;
-  }
-}
-
-.made-modeling__item {
-  position: relative;
-
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2b2b2b;
-
-  margin-left: 15px;
-
-  &:not(:last-child) {
-    margin-bottom: 16px;
-  }
-}
-
-.made-modeling__item::before {
-  content: '';
-  position: absolute;
-  left: -15px;
-  top: 54%;
-  transform: translate(0, -50%);
-  background-color: var(--title-color);
-  width: 7px;
-  height: 7px;
-  border-radius: 3px 0px;
-}
-
-.made-modeling__photo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  width: 100%;
-  height: 250px;
-  background-image: url(./../images/modeling-mob.png);
-  background-repeat: no-repeat;
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(./../images/modeling-mob-2x.png);
-    background-size: 440px auto;
-    background-size: contain;
-  }
-
-  @media screen and (min-width: 280px) and (max-width: 360px) {
-    height: 180px;
-  }
-
-  @media screen and (min-width: 768px) {
-    background-image: url(./../images/modeling-tab.png);
-    width: 246px;
-    height: 144px;
-    margin-top: 30px;
-    margin-left: 34px;
-    margin-right: 0;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(./../images/modeling-tab-2x.png);
-      background-size: 241px;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    background-image: url(./../images/modeling-desk.png);
-    width: 555px;
-    height: 301px;
-    margin: 0;
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(./../images/modeling-desk-2x.png);
-      background-size: contain;
-    }
-  }
-}
-
-// <!-- create-model -->
-
-.create-model {
-  padding-top: 40px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1440px) {
-    padding-top: 100px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding-bottom: 80px;
-  }
-
-  & .container {
-    @media screen and (min-width: 1440px) {
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-  }
-}
-
-.create-model__title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #487996;
-
-  margin-bottom: 16px;
-
-  @media screen and (max-width: 400px) {
-    width: 260px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 400px;
-    margin-bottom: 24px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
-    margin-bottom: 40px;
-    margin-left: 117px;
-    width: 842px;
-  }
-}
-
-.modeling__pictures {
-  display: flex;
-  flex-wrap: wrap;
-
-  row-gap: 20px;
-  column-gap: 16px;
-
-  min-width: 280px;
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    column-gap: 32px;
-  }
-}
-
-.picture__item {
-  width: calc((100% - 16px) / 2);
-  height: auto;
-
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 96px) / 4);
-  }
-}
-
-// <!-- modeling-btn -->
-
-.modeling-btn {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 60px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    margin-top: 80px;
-  }
-}
-
-.modeling-btn__text {
-  display: flex;
-  font-style: 400;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #487996;
-}
+  <div class="modeling-btn">
+    <a class="btn modeling-btn__text" href="/src/order-page.html "
+      >зробити замовлення</a
+    >
+  </div>
+</section>

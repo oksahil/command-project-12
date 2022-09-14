@@ -5,48 +5,27 @@
   }
   @include media(1440px) {
     padding-top: 188px;
-}
-
-    background-image: url(/src/images/cub-mob-1x.jpg);    
-    background-repeat: no-repeat;
-    background-size: 280px 171px;  
-    @include retina {
-       background-image: url(/src/images/cub-mob-2x.jpg);
-    } 
-    
-    @media screen and (min-width:768px) and (max-width:1439px){
-       background-image: url(/src/images/cub-tab-1x.jpg);    
-       background-size: 336px 261px;  
-       @include retina {
-       background-image: url(/src/images/cub-tab-2x.jpg);
-    }  
-    }
-
-    @media screen and (min-width:1440px){
-       background-image: url(/src/images/cub-desk-1x.jpg);    
-       background-size: 555px 315px;  
-       @include retina {
-       background-image: url(/src/images/cub-desk-2x.jpg);
-    }   
-    }
-
-
   }
-
-
-.contacts-list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        // gap: 32px;
-    }
 }
 
-// .contacts-item {
-//   @media screen and (min-width: 768px) {
-//     width: 336px;
-//   }
-// }
+.bg-vid {
+  display: inline-block;
+  
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
+}
+.contacts-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
+    
+  }
+}
+
 .order-text.smile {
   position: relative;
 }
@@ -76,7 +55,7 @@
 
   @media screen and (min-width: 480px) {
     max-width: 400px;
-    // align-content: center;
+   
   }
 
   @media screen and (min-width: 1440px) {
@@ -84,6 +63,15 @@
     margin-left: 0;
   }
 }
-.contacts-item {
-  width: 555px;
+.cont-item {
+  width: 100%;
+  @media screen and (min-width: 768px){
+     max-width: 515px;
+  }
+ 
+}  
+ .cont-item.text {
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+  }
 }
