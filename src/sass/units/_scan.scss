@@ -170,6 +170,16 @@
   @media screen and (min-width: 1440px) {
     width: 1440px;
   }
+
+  & .title-section {
+    @media screen and (min-width: 768px) {
+      padding-left: 28px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding-left: 117px;
+    }
+  }
 }
 
 .scan-process__title {
