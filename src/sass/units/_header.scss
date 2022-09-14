@@ -293,7 +293,7 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
     position: fixed;
     top: 0;
     z-index: -2;
-    display: none;
+
     width: 100vw;
     height: 100vh;
 
@@ -305,9 +305,10 @@ body.mouse .head-menu__content>.head-menu__offer:hover .head-menu__list {
         display: block;
         transform: scaleX(1);
 
-        @media screen and (min-width: 1440px) {
-            display: none;
-        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        display: none;
     }
 
 }
