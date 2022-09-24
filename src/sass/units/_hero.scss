@@ -98,6 +98,7 @@
     @include media (1440px) {width: 144px;}
 }
 .pict--one {
+    z-index: 10;
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -113,6 +114,7 @@
     }
 }
 .pict--two {
+    z-index: 10;
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -128,6 +130,7 @@
     }
 }
 .pict--three {
+    z-index: 10;
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -143,6 +146,7 @@
     }
 }
 .pict--four {
+    z-index: 10;
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -157,6 +161,7 @@
     }
 }
 .pict--five {
+    z-index: 10;
     @media screen and (max-width:1439px) {
         display: none;
     }

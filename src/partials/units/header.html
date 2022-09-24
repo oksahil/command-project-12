@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container-header">
-    <a class="header__link" href="/src/index.html">
+    <a class="header__link animate__animated animate__jello" href="/src/index.html">
       <picture>
         <source srcset="
                         /src/images/logo-1x.png    1x,
@@ -18,14 +18,12 @@
       </picture>
     </a>
     <div class="menu-open__wrap">
-      <button type="button" class="menu-button" data-menu-button>
+      <button type="button" class="menu-open">
         <svg width="24" height="24">
           <use class="icon-open" href="/src/images/icons.svg#icon-mob_menu"></use>
-          <use class="icon-close" href="/src/images/icons.svg#icon-close"></use>
         </svg>
       </button>
     </div>
-    <div class="head-menu__figure"></div>
     <nav class="head-menu">
       <ul class="head-menu__content">
         <li class="head-menu__li">
@@ -90,91 +88,115 @@
         </li>
       </ul>
 
-      <a class="figure-link" href="">
-        <p class="figure-text">eng</p>
-      </a>
+      <div class="lang-menu" href="">
+        <div class="lang-menu__eng">
+          eng
+        </div>
+        <ul>
+          <li class="lang-menu__eng"><a class="lang-menu__text" href="">en</a></li>
+          <li class="lang-menu__ua"><a class="lang-menu__text" href="">ua</a></li>
+          <li class="lang-menu__ru"><a class="lang-menu__text" href="">ru</a></li>
+        </ul>
+      </div>
 
     </div>
 
   </div>
-  <div class="nav-menu" data-menu>
+  <div class="nav-menu is-hidden">
     <div class="container-header">
-      <div class="nav-mix">
-        <a class="header__link" href="/src/index.html">
-          <picture>
-            <source srcset="
+      <a class="header__link animate__animated animate__jello" href="/src/index.html">
+        <picture>
+          <source srcset="
                                 /src/images/logo-1x.png    1x,
                                 /src/images/logo-2x.png 2x
                               " media="(min-width: 1440px)" />
-            <source srcset="
+          <source srcset="
                                 /src/images/tablogo-1x.png    1x,
                                 /src/images/tablogo-2x.png 2x
                               " media="(min-width: 768px)" />
-            <source srcset="
+          <source srcset="
                                 /src/images/moblogo-1x.png    1x,
                                 /src/images/moblogo-2x.png 2x
                               " media="(max-width: 767px)" />
-            <img class="logo__image" src="/src/images/logo-1x.png" width="192" alt="logo" />
-          </picture>
-        </a>
-        <div class="contacts-mix">
-          <ul class="header-contacts">
-            <li class="contacts-element">
-              <button type="button" class="contacts-button">
-                <svg class="contacts__icon" width="18" height="18" aria-label="mobile-menu-switcher">
-                  <use class="icon-phone" href="/src/images/icons.svg#icon-phone_form"></use>
-                </svg>
-              </button>
-              <div class="menu__box">
-                <div class="contacts__menu is-hidden">
-                  <a class="contacts__tel" href="tel:+38(093)6432288">
-
-                    +38 (093) 643 22 88
-
-                  </a>
-                  <a class="contacts__tel" href="tel:+38(050)3454423">
-
-                    +38 (050) 345 44 23
-
-                  </a>
-                </div>
-              </div>
-            </li>
-
-            <li class="contacts-element">
-              <a class="contacts-item__tel" href="tel:380961111111">
-                <svg class="contacts__phone-svg" width="10" height="10">
-                  <use class="contacts__phone-icon" href="/src/images/icons.svg#icon-phone_form"></use>
-                </svg> +38 (093) 643 22 88</a>
-              <a class="contacts-item__tel" href="tel:380961111111">
-                <svg class="contacts__phone-svg" width="10" height="10">
-                  <use class="contacts__phone-icon" href="/src/images/icons.svg#icon-phone_form"></use>
-                </svg> +38 (050) 345 44 23</a>
-            </li>
-          </ul>
-
-          <a class="figure-link" href="">
-            <p class="figure-text">eng</p>
-          </a>
-
-        </div>
+          <img class="logo__image" src="/src/images/logo-1x.png" width="192" alt="logo" />
+        </picture>
+      </a>
+      <div class="menu-close__wrap">
+        <button type="button" class="menu-close">
+          <svg width="24" height="24">
+            <use class="icon-close" href="/src/images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
+      <div class="contacts-mix">
+        <ul class="header-contacts">
+          <li class="contacts-element">
+            <button type="button" class="contacts-button">
+              <svg class="contacts__icon" width="18" height="18" aria-label="mobile-menu-switcher">
+                <use class="icon-phone" href="/src/images/icons.svg#icon-phone_form"></use>
+              </svg>
+            </button>
+            <div class="menu__box">
+              <div class="contacts__menu is-hidden">
+                <a class="contacts__tel" href="tel:+38(093)6432288">
+
+                  +38 (093) 643 22 88
+
+                </a>
+                <a class="contacts__tel" href="tel:+38(050)3454423">
+
+                  +38 (050) 345 44 23
+
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="contacts-element">
+            <a class="contacts-item__tel" href="tel:380961111111">
+              <svg class="contacts__phone-svg" width="10" height="10">
+                <use class="contacts__phone-icon" href="/src/images/icons.svg#icon-phone_form"></use>
+              </svg> +38 (093) 643 22 88</a>
+            <a class="contacts-item__tel" href="tel:380961111111">
+              <svg class="contacts__phone-svg" width="10" height="10">
+                <use class="contacts__phone-icon" href="/src/images/icons.svg#icon-phone_form"></use>
+              </svg> +38 (050) 345 44 23</a>
+          </li>
+        </ul>
+
+        <div class="lang-menu" href="">
+          <div class="lang-menu__eng">
+            eng
+          </div>
+          <ul>
+            <li class="lang-menu__eng"><a class="lang-menu__text" href="">en</a></li>
+            <li class="lang-menu__ua"><a class="lang-menu__text" href="">ua</a></li>
+            <li class="lang-menu__ru"><a class="lang-menu__text" href="">ru</a></li>
+          </ul>
+        </div>
+
+      </div>
+
     </div>
     <div class="nav-menu__content">
-      <a class="nav-menu__title" href="/src/index.html">Головна</a>
-      <p class="nav-menu__word">Послуги</p>
-
-      <a class="nav-item__text" href="/src/services-modeling.html">3D Моделювання</a>
-
-
-      <a class="nav-item__text" href="/src/services-scan.html">3D Сканування</a>
-
-
-      <a class="nav-item__text" href="/src/services-printing.html">3D Друк</a>
+      <a class="nav-menu__title eng" href="/src/index.html">Головна</a>
+      <button type="button" class="nav-menu__offer">Послуги</button>
+      <div class="offer-dropdown">
+        <ul class="offer-list">
+          <li class="offer-list__item">
+            <a class="nav-menu__text" href="/src/services-modeling.html">3D Моделювання</a>
+          </li>
+          <li class="offer-list__item">
+            <a class="nav-menu__text" href="/src/services-scan.html">3D Сканування</a>
+          </li>
+          <li class="offer-list__item">
+            <a class="nav-menu__text" href="/src/services-printing.html">3D Друк</a>
+          </li>
+        </ul>
+      </div>
 
       <a class="nav-menu__word" href="/src/order-page.html">Замовити</a>
       <a class="nav-menu__word" href="/src/contacts-page.html">Контакти</a>
     </div>
-
   </div>
 </header>
